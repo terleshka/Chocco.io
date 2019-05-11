@@ -1,0 +1,76 @@
+.content {
+  margin-top: 90px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .content__description {
+    width: 400px;
+    font-size: 21px;
+    font-weight: normal; }
+  .content__btn {
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0f5a47;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
+    box-shadow: 0 0 15px rgba(15, 72, 84, 0.5); }
+
+.title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.content__features {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-size: 16px;
+  width: 100%; }
+
+.content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.content__icon {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  background-color: #fff; }
+
+.content__icon_leaf {
+  background: url("../images/icons/leaf.svg") center center no-repeat; }
+
+.content__icon_car {
+  background: url("../images/icons/car.svg") center center no-repeat; }
+
+.content__icon_tape {
+  background: url("../images/icons/tape.svg") center center no-repeat; }

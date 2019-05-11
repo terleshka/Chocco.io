@@ -1,0 +1,30 @@
+.avatars{
+  display: flex;
+  justify-content: center;
+}
+.avatar__img{
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.avatar_one{
+  background-image: url(../images/feedback/alena_small.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.avatar_two{
+  background-image: url(../images/feedback/maria_small.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+}
+.avatar_three{
+  background-image: url(../images/feedback/vadim_small.jpg);
+  background-repeat: no-repeat;
+  background-position: 45% 35%;
+}
+.avatar__img_active{
+  border: 8px solid $color-green;
+  border-radius: 50%;
+}
