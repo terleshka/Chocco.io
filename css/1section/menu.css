@@ -1,0 +1,31 @@
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logo {
+  color: #fff;
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 21px;
+  font-family: 'Museo_Sans', 'Museo Sans Cyrl', sans-serif;
+  font-weight: 500; }
+
+.menu__link {
+  color: #fff;
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 18px;
+  padding: 10px; }

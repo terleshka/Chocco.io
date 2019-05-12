@@ -1,0 +1,77 @@
+.feedback {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/feedback/berry.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../images/feedback/berries.png), url(../images/feedback/design_leaf.png);
+    background-repeat: no-repeat;
+    background-position: 0% 128%, 0% 182%;
+  }
+}
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+
+.feedback__active {
+  margin-top: 30px;
+  display: flex;
+  height: 350px;
+  width: 100%;
+  background-color: #f8faf9;
+  background-image: url(../images/feedback/design_berry.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.feedback__avatar {
+  background-image: url(../images/feedback/alena.jpg);
+  width: 700px;
+  height: 260px;
+  background-position: center center;
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
+.feedback__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+
+  font-weight: normal;
+}
+
+.feedback__desc-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.feedback__desc-text {
+  width: 70%;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.feedback__desc-username {
+  font-size: 18px;
+}
