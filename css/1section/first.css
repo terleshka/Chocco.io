@@ -2,14 +2,14 @@
 Error: Undefined variable: "$color-blue".
         on line 3 of C:\Users\Admin\Dropbox\web\loftschool\pr3\css\1section\first.scss
 
-1: 
-2: .first {
+1: .first {
+2:   position: relative;
 3:   background-color: $color-blue;
 4:   color: #fff;
-5:   background-image: url(../images/main/berries.png), url(../images/main/foliage.png), url(../images/main/candy.png), url(../images/main/fern.png);
+5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);
 6:   background-repeat: no-repeat;
-7:   background-position: 75% 110%, 60% 115%, 80% 60%, 100% 100%;
-8: }
+7:   background-position: 95% 45%, 100% 100%;
+8: 
 
 Backtrace:
 C:\Users\Admin\Dropbox\web\loftschool\pr3\css\1section\first.scss:3
@@ -59,4 +59,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-blue\".\A         on line 3 of C:\Users\Admin\Dropbox\web\loftschool\pr3\css\1section\first.scss\A \A 1: \A 2: .first {\A 3:   background-color: $color-blue;\A 4:   color: #fff;\A 5:   background-image: url(../images/main/berries.png), url(../images/main/foliage.png), url(../images/main/candy.png), url(../images/main/fern.png);\A 6:   background-repeat: no-repeat;\A 7:   background-position: 75% 110%, 60% 115%, 80% 60%, 100% 100%;\A 8: }"; }
+  content: "Error: Undefined variable: \"$color-blue\".\A         on line 3 of C:\Users\Admin\Dropbox\web\loftschool\pr3\css\1section\first.scss\A \A 1: .first {\A 2:   position: relative;\A 3:   background-color: $color-blue;\A 4:   color: #fff;\A 5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);\A 6:   background-repeat: no-repeat;\A 7:   background-position: 95% 45%, 100% 100%;\A 8: "; }
