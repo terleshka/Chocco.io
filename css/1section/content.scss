@@ -1,12 +1,12 @@
-.content {
+.welcome-content {
   width: 50%;
 }
 
-.content__block {
+.welcome-content__block {
   margin-top: 78px;
 }
 
-.content__description {
+.welcome-content__description {
   font-size: 21px;
   font-weight: normal;
   line-height: 1.3;
@@ -20,7 +20,7 @@
   margin-bottom: 5px;
 }
 
-.content__features {
+.welcome-content__features {
   margin-top: auto;
   margin-bottom: 40px;
   display: flex;
@@ -29,12 +29,12 @@
   font-size: 16px;
 }
 
-.content__desc {
+.welcome-content__desc {
   width: 75px;
   line-height: 1.3;
 }
 
-.content__item {
+.welcome-content__item {
   margin-top: 65px;
   margin-right: 50px;
   display: flex;
@@ -42,16 +42,16 @@
 
 }
 
-.content__icon {
+.welcome-content__icon {
   height: 45px;
   width: 45px;
   margin-right: 10px;
   background-color: #fff;
 }
 
-@each $content__icon in (leaf, car, tape) {
-  .content__icon_#{$content__icon} {
-    background: url('../images/icons/#{$content__icon}.svg') center center no-repeat;
+@each $welcome-content__icon in (leaf, car, tape) {
+  .welcome-content__icon_#{$welcome-content__icon} {
+    background: url('../images/icons/#{$welcome-content__icon}.svg') center center no-repeat;
   }
 }
 

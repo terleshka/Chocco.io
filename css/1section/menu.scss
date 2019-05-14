@@ -19,10 +19,11 @@
   font-family: 'Museo_Sans', 'Museo Sans Cyrl', sans-serif;
   font-weight: 500;
 }
+.menu__item{
+  margin-right: 16px;
+}
 
 .menu__link {
   @include menuitem;
   font-size: 18px;
-  padding: 10px;
-  margin-right: 7px;
 }

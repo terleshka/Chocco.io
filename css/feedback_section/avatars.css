@@ -1,19 +1,23 @@
 /*
-Error: Undefined variable: "$color-blue".
-        on line 3 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\1section\first.scss
+Error: Undefined variable: "$color-green".
+        on line 28 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\feedback_section\avatars.scss
 
-1: .first {
-2:   position: relative;
-3:   background-color: $color-blue;
-4:   color: #fff;
-5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);
-6:   background-repeat: no-repeat;
-7:   background-position: 95% 45%, 100% 100%;
-8: }
+23:   background-image: url(../images/feedback/vadim_small.jpg);
+24:   background-repeat: no-repeat;
+25:   background-position: 45% 35%;
+26: }
+27: .avatar__img_active{
+28:   border: 8px solid $color-green;
+29:   border-radius: 50%;
+30: }
 
 Backtrace:
-C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\1section\first.scss:3
+C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\feedback_section\avatars.scss:28
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -59,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-blue\".\A         on line 3 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\1section\first.scss\A \A 1: .first {\A 2:   position: relative;\A 3:   background-color: $color-blue;\A 4:   color: #fff;\A 5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);\A 6:   background-repeat: no-repeat;\A 7:   background-position: 95% 45%, 100% 100%;\A 8: }"; }
+  content: "Error: Undefined variable: \"$color-green\".\A         on line 28 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\feedback_section\avatars.scss\A \A 23:   background-image: url(../images/feedback/vadim_small.jpg);\A 24:   background-repeat: no-repeat;\A 25:   background-position: 45% 35%;\A 26: }\A 27: .avatar__img_active{\A 28:   border: 8px solid $color-green;\A 29:   border-radius: 50%;\A 30: }"; }
