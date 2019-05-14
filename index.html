@@ -46,9 +46,9 @@
             </nav>
         </div>
         <section class="section first">
-             <div class="welcome-picture__position__absolute">
-                 <img src="./images/main/welcome_absolute.png">
-             </div>
+            <div class="welcome-picture__position__absolute">
+                <img src="./images/main/welcome_absolute.png">
+            </div>
             <div class="container">
                 <header class="header">
                     <div class="logo">CHO
@@ -95,15 +95,21 @@
                     </div>
                     <ul class="welcome-content__features">
                         <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_leaf"></svg>
+                            <svg class="welcome-content__icon welcome-content__icon_leaf">
+                                <use x="0" y="0"xlink:href="./css/sprite.svg#leaf"/>
+                            </svg>
                             <p class="welcome-content__desc">100% натуральный продукт</p>
                         </li>
                         <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_car"></svg>
+                            <svg class="welcome-content__icon welcome-content__icon_car">
+                                <use xlink:href="./css/sprite.svg#car"/>
+                            </svg>
                             <p class="welcome-content__desc">3-5 дней доставка по РФ</p>
                         </li>
                         <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_tape"></svg>
+                            <svg class="welcome-content__icon welcome-content__icon_tape">
+                                <use xlink:href="./css/sprite.svg#tape"/>
+                            </svg>
                             <p class="welcome-content__desc">Не портит фигуру</p>
                         </li>
                     </ul>
@@ -165,16 +171,127 @@
             <h2>Слайдер</h2>
         </section>
         <section class="section team">
-
+            <div class="team-picture__position__absolute">
+                <img class="team-picture__position__absolute-leaf" src="./images/slider/Узор на фоне.png">
+                <img class="team-picture__position__absolute-berries" src="./images/slider/blueberry.png">
+            </div>
+            <div class="container">
+                <h2 class="team__title">КОМАНДА</h2>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img src="" alt="boris" class="team__photo">
+                        <div class="team__name">
+                            <h3>Борис Федорович</h3>
+                        </div>
+                        <div class="team__desc">
+                            <h4 class="team__job">Оператор</h4>
+                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
+                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="boris" class="team__photo">
+                        <div class="team__name">
+                            <h3>Алла Иванова</h3>
+                        </div>
+                        <div class="team__desc">
+                            <h4 class="team__job">Оператор</h4>
+                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
+                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="boris" class="team__photo">
+                        <div class="team__name">
+                            <h3>Кирилл Матросов</h3>
+                        </div>
+                        <div class="team__desc">
+                            <h4 class="team__job">Оператор</h4>
+                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
+                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="boris" class="team__photo">
+                        <div class="team__name">
+                            <h3>Мила Рыжкова</h3>
+                        </div>
+                        <div class="team__desc">
+                            <h4 class="team__job">Оператор</h4>
+                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
+                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="section menu-accordeon">
-
+        <section class="section menu-accordion">
+            <div class="menu-accordion-picture__position__absolute">
+                <img src="./images/team/berry.png">
+            </div>
+            <div class="accordion">
+                <h2 class="accordion__title">МЕНЮ</h2>
+                <ul class="accordion__list">
+                    <li class="accordion__item accordion__item--active">
+                        <div class="accordion___vertical-block">
+                            <h3 class="accordion__vertical-block-title">Батончики с молоком</h3>
+                        </div>
+                        <div class="accordion__desc">
+                            <p class="accordion__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
+                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
+                                error cumque nisi provident autem est veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__item ">
+                        <div class="accordion___vertical-block">
+                            <h3 class="accordion__vertical-block-title">Батончики с молоком</h3>
+                        </div>
+                        <div class="accordion__desc">
+                            <p class="accordion__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
+                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
+                                error cumque nisi provident autem est veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__item">
+                        <div class="accordion___vertical-block">
+                            <h3 class="accordion__vertical-block-title">С медом и фруктами</h3>
+                        </div>
+                        <div class="accordion__desc">
+                            <p class="accordion__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
+                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
+                                error cumque nisi provident autem est veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__item">
+                        <div class="accordion___vertical-block">
+                            <h3 class="accordion__vertical-block-title">Дикие ягоды</h3>
+                        </div>
+                        <div class="accordion__desc">
+                            <p class="accordion__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
+                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
+                                error cumque nisi provident autem est veniam?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="section feedback">
-                <div class="feedback-picture__position__absolute">
-                    <img class="feedback-picture__position__absolute-leaf" src="./images/feedback/design_leaf.png">
-                    <img class="feedback-picture__position__absolute-berries" src="./images/feedback/berries.png">
-                </div>
+            <div class="feedback-picture__position__absolute">
+                <img class="feedback-picture__position__absolute-leaf" src="./images/feedback/design_leaf.png">
+                <img class="feedback-picture__position__absolute-berries" src="./images/feedback/berries.png">
+            </div>
             <div class="container">
                 <h2 class="feedback__title">Отзывы</h2>
                 <div class="feedback__body">
