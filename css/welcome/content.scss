@@ -46,14 +46,13 @@
   height: 45px;
   width: 45px;
   margin-right: 10px;
-  background-color: #fff;
+  fill: #fff;
+}
+.welcome-content__icon_leaf{
+  
 }
 
-@each $welcome-content__icon in (leaf, car, tape) {
-  .welcome-content__icon_#{$welcome-content__icon} {
-    background: url('../images/icons/#{$welcome-content__icon}.svg') center center no-repeat;
-  }
-}
+
 
 .btn_content {
   margin-top: 28px;

@@ -8,15 +8,6 @@
   background-image: url(../images/why_chocco/leaf.png);
   background-repeat: no-repeat;
   background-position: 0% 56%; }
-  .whychocco:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(../images/why_chocco/raspberry.png);
-    background-repeat: no-repeat;
-    background-position: 0% 133%; }
 
 .whychocco__title {
   text-align: center;
@@ -35,5 +26,12 @@
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 50px; }
+
+.whychocco-picture__position__absolute {
+  position: absolute;
+  bottom: -108px;
+  left: 0;
+  right: 0;
+  z-index: 0; }
 
 /*# sourceMappingURL=whychocco.css.map */
