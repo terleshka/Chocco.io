@@ -435,7 +435,7 @@ footer {
    z-index:0;
 }
 .welcome__picture__position__absolute img {
-  mergen: 0 auto;
+  margen: 0 auto;
 }
 .header {
   display: flex;
