@@ -4,13 +4,15 @@
 @import "./base/base.scss";
 @import "./base/sidebar.scss";
 
-@import "./1section/first.scss";
-@import "./1section/header.scss";
-@import "./1section/menu.scss";
-@import "./1section/content.scss";
+@import "./welcome/first.scss";
+@import "./welcome/header.scss";
+@import "./welcome/menu.scss";
+@import "./welcome/content.scss";
 
-@import "./2section/whychocco.scss";
-@import "./2section/features.scss";
+@import "./whychocco/whychocco.scss";
+@import "./whychocco/features.scss";
 
 @import "./feedback_section/feedback.scss";
 @import "./feedback_section/avatars.scss";
+
+// @import "./team/---.scss";

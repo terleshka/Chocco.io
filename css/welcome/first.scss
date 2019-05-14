@@ -7,10 +7,13 @@
   background-position: 95% 45%, 100% 100%;
 }
 
-.welcome__picture__position__absolute {
+.welcome-picture__position__absolute {
   position: absolute;
   bottom: -50px;
   left: 0;
   right: 0;
-
+  z-index: 0;
+}
+.welcome-picture__position__absolute img{
+  margin: 0 auto;
 }

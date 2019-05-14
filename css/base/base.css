@@ -81,4 +81,24 @@ footer {
   box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
   cursor: pointer; }
 
+.slider {
+  background-color: yellow;
+  text-align: center; }
+
+.menu-accordeon {
+  background-color: beige;
+  text-align: center; }
+
+.how-we-work {
+  background-color: green;
+  text-align: center; }
+
+.delivery-form {
+  background-color: blueviolet;
+  text-align: center; }
+
+.contacts {
+  background-color: darkkhaki;
+  text-align: center; }
+
 /*# sourceMappingURL=base.css.map */
