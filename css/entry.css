@@ -368,7 +368,8 @@ address {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 100%; }
+  height: 100%; 
+  z-index: 1; }
 
 .section {
   height: 100vh;
@@ -442,7 +443,9 @@ footer {
   color: #fff;
   background-image: url(../images/main/candy.png), url(../images/main/fern.png);
   background-repeat: no-repeat;
-  background-position: 95% 45%, 100% 100%; }
+  background-position: 95% 45%, 100% 100%; 
+  z-index: 3;
+   }
 
 .welcome-picture__position__absolute {
   position: absolute;
@@ -453,6 +456,7 @@ footer {
 
 .welcome-picture__position__absolute img {
   margin: 0 auto; }
+
 
 .header {
   display: flex;
