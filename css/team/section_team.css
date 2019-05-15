@@ -1,0 +1,29 @@
+.team {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: #000;
+  display: flex;
+  flex-direction: column; }
+
+.team-picture__position__absolute-leaf {
+  position: absolute;
+  top: -237px;
+  right: 0;
+  z-index: 0; }
+.team-picture__position__absolute-berries {
+  position: absolute;
+  top: -64px;
+  right: 16px;
+  z-index: 1; }
+
+.team__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 94px; }
+
+/*# sourceMappingURL=section_team.css.map */

@@ -19,14 +19,8 @@
 .welcome-content__features {
   margin-top: auto;
   margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   font-size: 16px; }
 
@@ -37,13 +31,33 @@
 .welcome-content__item {
   margin-top: 65px;
   margin-right: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row; }
+
+.welcome-content__icon {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px; }
+
+.welcome-content__icon_leaf {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 0.8;
+  stroke-miterlimit: 10; }
+
+.welcome-content__icon_car {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 0.8;
+  stroke-miterlimit: 10; }
+
+.welcome-content__icon_tape {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 0.8;
+  stroke-miterlimit: 10; }
 
 .btn_content {
   margin-top: 28px; }
+
+/*# sourceMappingURL=content.css.map */

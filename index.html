@@ -96,19 +96,19 @@
                     <ul class="welcome-content__features">
                         <li class="welcome-content__item">
                             <svg class="welcome-content__icon welcome-content__icon_leaf">
-                                <use x="0" y="0"xlink:href="./css/sprite.svg#leaf"/>
+                                <use x="0" y="0" xlink:href="./css/sprite.svg#leaf" />
                             </svg>
                             <p class="welcome-content__desc">100% натуральный продукт</p>
                         </li>
                         <li class="welcome-content__item">
                             <svg class="welcome-content__icon welcome-content__icon_car">
-                                <use xlink:href="./css/sprite.svg#car"/>
+                                <use xlink:href="./css/sprite.svg#car" />
                             </svg>
                             <p class="welcome-content__desc">3-5 дней доставка по РФ</p>
                         </li>
                         <li class="welcome-content__item">
                             <svg class="welcome-content__icon welcome-content__icon_tape">
-                                <use xlink:href="./css/sprite.svg#tape"/>
+                                <use xlink:href="./css/sprite.svg#tape" />
                             </svg>
                             <p class="welcome-content__desc">Не портит фигуру</p>
                         </li>
@@ -130,7 +130,10 @@
 
                 <ul class="features__list">
                     <li class="features__item">
-                        <div class="features__icon features__icon--man">
+                        <div class="features__icon ">
+                            <svg class="features__icon features__icon--man">
+                                <use xlink:href="./css/sprite.svg#man"/>
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Полезно</h3>
@@ -141,7 +144,10 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div class="features__icon features__icon--smile">
+                        <div class="features__icon ">
+                            <svg class="features__icon features__icon--smile">
+                                <use xlink:href="./css/sprite.svg#smile"/>
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Вкусно</h3>
@@ -152,7 +158,10 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div class="features__icon features__icon--power">
+                        <div class="features__icon ">
+                            <svg class="features__icon--power">
+                                <use xlink:href="./css/sprite.svg#power"/>
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Питательно</h3>
@@ -181,7 +190,7 @@
                     <li class="team__item">
                         <img src="" alt="boris" class="team__photo">
                         <div class="team__name">
-                            <h3>Борис Федорович</h3>
+                            <h3 >Борис Федорович</h3>
                         </div>
                         <div class="team__desc">
                             <h4 class="team__job">Оператор</h4>
@@ -204,14 +213,12 @@
                     </li>
                     <li class="team__item">
                         <img src="" alt="boris" class="team__photo">
-                        <div class="team__name">
+                        <div class="team__name team__name--active">
                             <h3>Кирилл Матросов</h3>
                         </div>
-                        <div class="team__desc">
+                        <div class="team__desc team__desc--active">
                             <h4 class="team__job">Оператор</h4>
-                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
-                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                            <p class="team__text">С радостью поможет подобрать батончики и оформить заказ</p>
                         </div>
                     </li>
                     <li class="team__item">
@@ -334,7 +341,21 @@
             <h2>Закажи доставку</h2>
         </section>
         <section class="section contacts">
-            <h2>Карта и футер</h2>
+            <div class="contacts__marker">
+                <img src="./images/map/marker.png" alt="" class="contacts__marker-pos-abs">
+            </div>
+            <footer class="footer">
+                <address class="address">
+                    <p class="address__text">Москва, ул. Новый Арбат, д.31/12</p>
+                    <a href="tel:+788009039090" class="phone-number phone-number--footer">8 800 903 90 90</a>
+                </address>
+                <div class="socials">
+                    <div class="socials__icon socials__icon--vk"></div>
+                    <div class="socials__icon socials__icon--fb"></div>
+                    <div class="socials__icon socials__icon--inst"></div>
+                    <div class="socials__icon socials__icon--twit"></div>
+                </div>
+            </footer>
         </section>
     </div>
 </body>

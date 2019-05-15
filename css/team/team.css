@@ -1,21 +1,39 @@
 /*
-Error: Undefined variable: "$color-blue".
-        on line 3 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\welcome\first.scss
+Error: Undefined variable: "$color-green".
+        on line 37 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\team\team.scss
 
-1: .first {
-2:   position: relative;
-3:   background-color: $color-blue;
-4:   color: #fff;
-5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);
-6:   background-repeat: no-repeat;
-7:   background-position: 95% 45%, 100% 100%;
-8: }
+32:     height: 0;
+33:     display: inline-flex;
+34:     margin-left: 10px;
+35:     border-left: 5px solid transparent;
+36:     border-right: 5px solid transparent;
+37:     border-top: 7px solid $color-green;
+38: 
+39:   }
+40: }
+41: .team__desc--active{
+42:   overflow: visible;
 
 Backtrace:
-C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\welcome\first.scss:3
+C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\team\team.scss:37
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -59,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-blue\".\A         on line 3 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\welcome\first.scss\A \A 1: .first {\A 2:   position: relative;\A 3:   background-color: $color-blue;\A 4:   color: #fff;\A 5:   background-image: url(../images/main/candy.png), url(../images/main/fern.png);\A 6:   background-repeat: no-repeat;\A 7:   background-position: 95% 45%, 100% 100%;\A 8: }"; }
+  content: "Error: Undefined variable: \"$color-green\".\A         on line 37 of C:\Users\stipendia\Dropbox\web\loftschool\pr3\css\team\team.scss\A \A 32:     height: 0;\A 33:     display: inline-flex;\A 34:     margin-left: 10px;\A 35:     border-left: 5px solid transparent;\A 36:     border-right: 5px solid transparent;\A 37:     border-top: 7px solid $color-green;\A 38: \A 39:   }\A 40: }\A 41: .team__desc--active{\A 42:   overflow: visible;"; }

@@ -1,9 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
   <symbol id="car" viewBox="0 0 18.2 14.8">
-    <style type="text/css">
-    	.st0{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-    	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-    </style>
     <g>
 	  <path class="st0" d="M1.9,12h8.3c0.4,0,0.8-0.3,0.8-0.8V3c0-0.4-0.3-0.8-0.8-0.8H1.9C1.4,2.2,1.1,2.6,1.1,3v8.3
 		C1.1,11.7,1.4,12,1.9,12z"/>
@@ -28,7 +24,7 @@
     </g>
   </symbol>
   <symbol id="man" viewBox="0 0 19.6 20.4">
-    <g>
+		  <g>
 	    <circle class="st0" cx="9.9" cy="10.7" r="9.3"/>
     	<rect x="1.8" y="4" transform="matrix(0.6369 0.7709 -0.7709 0.6369 4.6638 -0.2936)" class="st1" width="1.6" height="1.5"/>
     	<rect x="16.2" y="4" transform="matrix(0.6369 0.7709 -0.7709 0.6369 9.8607 -11.3278)" class="st1" width="1.6" height="1.5"/>

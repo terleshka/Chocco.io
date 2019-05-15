@@ -46,12 +46,28 @@
   height: 45px;
   width: 45px;
   margin-right: 10px;
-  fill: #fff;
+ 
 }
 .welcome-content__icon_leaf{
-  
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:0.8;
+  stroke-miterlimit:10;
 }
 
+.welcome-content__icon_car{
+  fill:none;
+  stroke: #ffffff;
+  stroke-width:0.8;
+  stroke-miterlimit:10;
+	
+}
+.welcome-content__icon_tape{
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:0.8;
+  stroke-miterlimit:10;
+}
 
 
 .btn_content {
