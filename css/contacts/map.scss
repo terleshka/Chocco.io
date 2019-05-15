@@ -1,6 +1,8 @@
 .contacts{
   position: relative;
-  background-image: url(../images/map/map.PNG);
+  background-image: url(../images/map/карта.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contacts__marker-pos-abs{
   position: absolute;

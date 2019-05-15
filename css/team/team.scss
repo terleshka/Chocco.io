@@ -15,14 +15,16 @@
   align-items: center;
   align-content: space-between;
   margin-right: 30px;
-  margin-top: 5%;
+  margin-top: 10%;
 
   &:nth-child(2n) {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 .team__name{
-  
+  margin-top: 10%;
+  font-size: 20px;
+  font-weight: 500;
 }
 .team__name h3{
   vertical-align: middle;

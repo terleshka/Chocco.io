@@ -1,0 +1,9 @@
+.contacts {
+  position: relative;
+  background-image: url(../images/map/map.PNG);
+  background-repeat: no-repeat; }
+
+.contacts__marker-pos-abs {
+  position: absolute;
+  top: 50%;
+  left: 70%; }

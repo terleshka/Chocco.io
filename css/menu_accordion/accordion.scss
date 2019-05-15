@@ -1,0 +1,26 @@
+.accordion{
+  display: flex;
+  height: 100%;
+}
+.accordion__title{
+  width: 30%;
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+.accordion__list{
+  display: flex;
+  
+}
+.accordion__item{
+  display: flex;
+  
+}
+.accordion___vertical-block{
+  display: flex;
+  flex-direction: column;
+}
+.accordion__vertical-block-title{
+  transform: rotate(-90deg);
+}
