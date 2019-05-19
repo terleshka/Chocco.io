@@ -1,5 +1,11 @@
 .features__list {
   display: flex;
+
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features__desc {
@@ -12,7 +18,12 @@
   flex-flow: column wrap;
   align-items: center;
   align-content: space-between;
-  margin-right: 30px;
+  margin-right: rem(30px);
+
+  @include tablets{
+    justify-content: center;
+    margin-bottom: 3%;
+  }
 
   &:after {
     content: "";
@@ -20,8 +31,12 @@
     width: 100%;
     background-image: url(../images/why_chocco/circles.png);
     background-repeat: no-repeat;
-    margin-top: 56px;
-    margin-left: -25px;
+    margin-top: rem(56px);
+    margin-left: rem(-25px);
+
+    @include tablets{
+      display: none;
+    }
   }
 
   &:last-child {
@@ -29,19 +44,20 @@
       display: none;
     }
   }
+  
 }
 
 .features__icon {
   background-color: #f2f5f4;
   border-radius: 50%;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 @mixin icon_svg {
-  width: 70px;
-  height: 70px;
+  width: rem(70px);
+  height: rem(70px);
   margin-top: 23%;
   margin-left: 23%;
 }
@@ -67,13 +83,20 @@
 }
 
   .features__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .features__text {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 300;
 
+  @include tablets{
+    padding: 0 30%;
+    align-items:center;
+  }
+  @include phones{
+   padding: 0 25%; 
+  }
 }

@@ -10,7 +10,7 @@
 }
 .delivery-form__title h2{
   font-weight: 700;
-  font-size: 48px;
+  font-size: rem(48px);
   text-align: center;
   margin-top: 10%;
   text-transform: uppercase;
@@ -18,16 +18,24 @@
 .form-picture__position__absolute-blackberries{
   position: absolute;
   right: 0;
-  top: -150px;
+  top: rem(-150px);
 }
 .form-picture__position__absolute-leaf{
   position: absolute;
   right: 5%;
   bottom: 15%;
+
+  @include tablets{
+    display: none;
+  }
 }
 .form-picture__position__absolute-berry{
   position: absolute;
   right: 0;
   left: 5%;
   bottom: 10%;
+
+  @include tablets{
+    display: none;
+  }
 }

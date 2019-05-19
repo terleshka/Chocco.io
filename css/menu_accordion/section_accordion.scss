@@ -10,13 +10,13 @@
 }
 .menu-accordion-picture__position__absolute {
   position: absolute;
-  top: -65px;
+  top: rem(-65px);
   left: 0;
   right: 0;
   z-index: 0;
 }
 .menu-accordion__title{
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   position: absolute;
   top:10%;

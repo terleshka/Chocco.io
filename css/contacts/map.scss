@@ -3,6 +3,10 @@
   background-image: url(../images/map/карта.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablets{
+    height: 60%;
+  }
 }
 .contacts__marker-pos-abs{
   position: absolute;

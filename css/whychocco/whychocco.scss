@@ -8,16 +8,23 @@
   background-image: url(../images/why_chocco/leaf.png);
   background-repeat: no-repeat;
   background-position: 0% 56%;
+
+  @include phones{
+    background-position: 0% 30%;
+  }
 }
 
 .whychocco__title {
   text-align: center;
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 94px;
+  margin-bottom: rem(10px);
+  margin-top: rem(94px);
+  @include tablets{
+  margin-top: 5%;
+  }
 }
 
 .whychocco__desc {
@@ -25,14 +32,26 @@
   width: 49%;
   line-height: 1.3;
   text-align: center;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
+  
+  @include tablets{
+    width: 55%;  
+    align-items:center;
+  }
+  @include phones{
+    width: 75%;
+  }
 }
 .whychocco-picture__position__absolute {
   position: absolute;
-  bottom: -108px;
+  bottom: rem(-108px);
   left: 0;
   right: 0;
   z-index: 0;
+
+  @include phones{
+    bottom: -15%;
+  }
 }

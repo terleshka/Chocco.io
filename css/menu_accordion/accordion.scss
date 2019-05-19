@@ -19,14 +19,14 @@
   
 }
 .accordion__link{
-  width: 100px;
+  width: rem(100px);
   display: flex;
   align-items: flex-end;
   justify-content:center;
 
 }
 .accordion__title{
-  font-size: 47px;
+  font-size: rem(47px);
   font-weight: 500;
   text-align: center;
   white-space: nowrap;
@@ -34,7 +34,7 @@
   writing-mode: vertical-lr; 
   transform: scale(-1); 
 
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
   
 }
 .accordion-bg-milk{
@@ -69,7 +69,7 @@
 }
 
 .accordion__text{
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 400;
   color:white;
 
@@ -82,4 +82,7 @@
 }
 .accordion__desc--active{
   width: 50%;
+  @include phones{
+    width: 80%;
+  }
 }

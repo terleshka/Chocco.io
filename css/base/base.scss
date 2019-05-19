@@ -1,3 +1,13 @@
+html{
+  font-size: 16px;
+  @include tablets{
+    font-size: 15px;
+  }
+  @include phones{
+    font-size: 13px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -14,7 +24,6 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
-  min-width: 1100px;
   min-height: 100%;
 }
 
@@ -66,7 +75,8 @@ address {
 }
 
 .container {
-  width: 940px;
+  max-width: rem(940px);
+  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -75,7 +85,7 @@ address {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -90,24 +100,24 @@ $color-blue:#61c4d9;
 $color-green: #0f5a47;
 
 .btn {
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: 800;
   text-transform: uppercase;
   color: $color-green;
   background-color: #fff;
-  border-radius: 40px;
-  padding: 16px 35px;
+  border-radius: rem(40px);
+  padding: rem(16px) rem(35px);
   box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
   cursor: pointer;
 }
 // для визуализации
 .slider{
-  background-color: yellow;
+  background-color: #f8faf9;
   text-align: center;
 }
 
 .how-we-work{
-  background-color: green;
+  background-color: #f8faf9;
   text-align: center;
 }
 

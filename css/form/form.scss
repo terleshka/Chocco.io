@@ -1,32 +1,54 @@
 .form{
   display: flex;
-  font-size: 18px;
+  font-size: rem(18px);
   padding: 7%;
+
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+    margin-top: 5%;
+  }
 }
 
 .form__block{
   display: flex;
   width: 50%;
   flex-direction: column;  
+
+  @include tablets{
+    width: 100%;
+  }
 }
 .form__row{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin:10px;
+  margin:rem(10px);
 }
 .form__buttons{
   display: flex;
   margin-top: 5%;
+  cursor: pointer;
+
+  @include tablets{
+    margin-top: 7%;
+    align-self: center;
+  }
 }
 .form__radio-checkbox-block{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @include tablets{
+    justify-content: center;
+    margin-top: 5%;
+  }
 }
 .form__label-radio{
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 .form__label-checkbox{
   display: flex;
@@ -52,31 +74,43 @@
   align-self: flex-start;
 }
 .form__input{
-  height: 60px;
+  height: rem(60px);
   border: none;
-  padding: 10px;
-  font-size: 18px;
+  padding: rem(10px);
+  font-size: rem(18px);
   
+}
+.width-m{
+  width: 100%;
 }
 .width-s{
   width: 100%;
 }
 .form__textarea{
-  height: 180px;
+  height: rem(180px);
   border: none;
-  padding: 10px;
-  font-size: 18px;
+  padding: rem(10px);
+  font-size: rem(18px);
   resize: none;
 }
 .form__submit{
   color: #fff;
   background-color: $color-green;
   margin-right: 5%;
+
+  @include tablets{
+    margin-right: 10%;
+  }
 }
 .form__reset{
   cursor: pointer;
   color: $color-green;
-  font-size: 18px;
+  font-size: rem(18px);
+}
+.form__checkbox{
+  @include tablets{
+    margin-top: 5%;
+  }
 }
 .form__radio-btn, .form__checkbox-btn {
   display: none;
@@ -87,7 +121,7 @@
   height: 25px;
   background-color: #fff;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: rem(10px);
   position: relative;
 }
 .form__radio-custom:after{
@@ -116,7 +150,7 @@
   width: 25px;
   height: 25px;
   background-color: #fff;
-  margin-right: 10px;
+  margin-right: rem(10px);
   position: relative;
 }
 .form__checkbox-custom:after{

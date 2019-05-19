@@ -3,30 +3,28 @@
   height: 100vh;
   width: 100vw;
   color: #000;
-  display: flex;
-  flex-direction: column;
   }
 .team-picture__position__absolute {
    
   &-leaf{
   position: absolute;
-  top: -237px;
+  top: rem(-237px);
   right: 0;
   z-index: 0;
   }
   &-berries{
   position: absolute;
-  top: -64px;
-  right: 16px;
+  top: rem(-64px);
+  right: rem(16px);
   z-index: 1;
   }
 }
 .team__title {
   text-align: center;
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 94px;
+  margin-bottom: rem(10px);
+  margin-top: rem(94px);
 }

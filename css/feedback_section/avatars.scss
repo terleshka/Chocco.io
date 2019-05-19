@@ -3,11 +3,11 @@
   justify-content: center;
 }
 .avatar__img{
-  width: 95px;
-  height: 95px;
+  width: rem(95px);
+  height: rem(95px);
   border-radius: 50%;
-  margin-right: 40px;
-  margin-top: 40px;
+  margin-right: rem(40px);
+  margin-top: rem(40px);
 }
 .avatar_one{
   background-image: url(../images/feedback/alena_small.jpg);

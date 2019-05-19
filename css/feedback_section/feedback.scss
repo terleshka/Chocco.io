@@ -13,14 +13,14 @@
    
   &-leaf{
   position: absolute;
-  bottom: -262px;
+  bottom: rem(-262px);
   left: 0;
   right: 0;
   z-index: 0;
   }
   &-berries{
   position: absolute;
-  bottom: -192px;
+  bottom: rem(-192px);
   left: 0;
   right: 0;
   z-index: 1;
@@ -29,55 +29,76 @@
 
 .feedback__title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: rem(48px);
   text-align: center;
-  margin-top: 30px;
+  margin-top: rem(30px);
   text-transform: uppercase;
 }
 
 
 .feedback__active {
-  margin-top: 30px;
+  margin-top: rem(30px);
   display: flex;
-  height: 350px;
+  height: rem(350px);
   width: 100%;
   background-color: #f8faf9;
   background-image: url(../images/feedback/design_berry.png);
   background-repeat: no-repeat;
   background-position: 100% 0%;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    height: rem(600px);
+    width:75%;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
 }
 
 .feedback__avatar {
   background-position: center center;
-  margin-top: 50px;
-  margin-left: 45px;
+  margin-top: rem(50px);
+  margin-left: rem(45px);
 }
 .feedback__pic{
-  min-width: 254px;
+  min-width: rem(254px);
+
+  @include tablets{
+    width: 80%;
+    margin-bottom: 10%;
+  }
 }
 
 .feedback__desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
-
+  margin-left: rem(20px);
   font-weight: normal;
+
+  @include tablets{
+    text-align: center;
+  }
 }
 
 .feedback__desc-title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .feedback__desc-text {
   width: 70%;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   line-height: 1.3;
-  font-size: 18px;
+  font-size: rem(18px);
+
+  @include tablets{
+    width: 100%;
+    padding: 0 rem(50px);
+  }
 }
 
 .feedback__desc-username {
-  font-size: 18px;
+  font-size: rem(18px);
 }

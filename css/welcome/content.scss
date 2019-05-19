@@ -1,57 +1,80 @@
 .welcome-content {
   width: 50%;
+  
+  @include tablets{
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    padding: rem(50px);
+  }
+  @include phones{
+    margin-top: auto;
+    padding-bottom:0 ;
+
+  }
 }
 
 .welcome-content__block {
-  margin-top: 78px;
+  margin-top: rem(78px);
 }
 
 .welcome-content__description {
-  font-size: 21px;
+  font-size: rem(21px);
   font-weight: normal;
   line-height: 1.3;
+  @include tablets{
+    padding: 0 rem(150px);
+  }
+  @include phones{
+    padding: 0 rem(50px);
+  }
 }
 
 .title {
-  font-size: 60px;
+  font-size: rem(60px);
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
+  
 }
 
 .welcome-content__features {
   margin-top: auto;
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-size: 16px;
+  font-size: rem(16px);
+
+  @include tablets{
+    justify-content: center;
+  }
 }
 
 .welcome-content__desc {
-  width: 75px;
+  width: rem(75px);
   line-height: 1.3;
 }
 
 .welcome-content__item {
-  margin-top: 65px;
-  margin-right: 50px;
+  margin-top: rem(65px);
+  margin-right: rem(50px);
   display: flex;
   flex-direction: row;
 
 }
 
 .welcome-content__icon {
-  margin-right: 10px;
-  height: 50px;
-  width: 50px;
+  margin-right: rem(10px);
+  height: rem(50px);
+  width: rem(50px);
 
 }
 
 .welcome-content__icon_leaf{
-  height: 45px;
-  width: 45px;
+  height: rem(45px);
+  width: rem(45px);
   fill:none;
   stroke:#b0f7ff;
   stroke-width:0.8;
@@ -59,8 +82,8 @@
 	
 }
 .welcome-content__icon_tape{
-  height: 45px;
-  width: 45px;
+  height: rem(45px);
+  width: rem(45px);
   fill:none;
   stroke:#b0f7ff;
   stroke-width:0.8;
@@ -69,5 +92,6 @@
 
 
 .btn_content {
-  margin-top: 28px;
+  margin-top: rem(28px);
+
 }

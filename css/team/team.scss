@@ -1,39 +1,64 @@
 .team__list {
   display: flex;
+
+  @include tablets{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .team__desc {
   text-align: center;
   overflow: hidden;
   height: 0;
+
+  @include tablets{
+    width: 40%;
+   }
 }
 
 .team__item {
-  flex: 1;
+  
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  align-content: space-between;
-  margin-right: 30px;
+  
+  margin-right: rem(30px);
   margin-top: 5%;
+
+  @include tablets{
+    
+    margin-right: 0;
+  }
 
   &:nth-child(2n) {
     margin-top: 10%;
+
+    @include tablets{
+      margin-top: 5%;
+    }
   }
 }
 .team__name{
   margin-top: 10%;
-  font-size: 20px;
+  font-size: rem(20px);
   font-weight: 500;
+
+  @include tablets{
+    margin-top: 5%;
+      }
 }
+
 .team__name h3{
+  font-weight: bold;
   vertical-align: middle;
   &::after {
     content: "";
     width: 0;
     height: 0;
     display: inline-flex;
-    margin-left: 10px;
+    margin-left: rem(10px);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 7px solid $color-green;
@@ -41,5 +66,8 @@
   }
 }
 .team__desc--active{
-  overflow: visible;
+  // overflow: visible;
+}
+.team__job{
+  font-weight: bold;
 }

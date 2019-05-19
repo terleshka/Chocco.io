@@ -5,15 +5,32 @@
   background-image: url(../images/main/candy.png), url(../images/main/fern.png);
   background-repeat: no-repeat;
   background-position: 95% 45%, 100% 100%;
+
+  @include tablets{
+    background-position: 50% 5%, 100% 0%;
+
+  }
+  @include phones{
+    background-size:90%;
+  }
 }
 
 .welcome-picture__position__absolute {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  z-index: 0;
+ 
 }
 .welcome-picture__position__absolute img{
   margin: 0 auto;
+  position: absolute;
+  bottom: rem(-50px);
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  @include tablets{
+    top:25%;
+    left: -60%;
+  }
+  @include phones{
+    
+  }
 }
