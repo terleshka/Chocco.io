@@ -1,0 +1,139 @@
+.form{
+  display: flex;
+  font-size: 18px;
+  padding: 7%;
+}
+
+.form__block{
+  display: flex;
+  width: 50%;
+  flex-direction: column;  
+}
+.form__row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin:10px;
+}
+.form__buttons{
+  display: flex;
+  margin-top: 5%;
+}
+.form__radio-checkbox-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.form__label-radio{
+  display: flex;
+  margin-bottom: 10px;
+}
+.form__label-checkbox{
+  display: flex;
+}
+
+.form__radio{
+  width: 40%;
+}
+.form__label-input{
+  display: flex;
+  
+  margin-right: 5%;
+  flex-grow: 1;
+}
+.form__label{
+  
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.form__label-title{
+  align-self: flex-start;
+}
+.form__input{
+  height: 60px;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  
+}
+.width-s{
+  width: 100%;
+}
+.form__textarea{
+  height: 180px;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  resize: none;
+}
+.form__submit{
+  color: #fff;
+  background-color: $color-green;
+  margin-right: 5%;
+}
+.form__reset{
+  cursor: pointer;
+  color: $color-green;
+  font-size: 18px;
+}
+.form__radio-btn, .form__checkbox-btn {
+  display: none;
+}
+.form__radio-custom{
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+.form__radio-custom:after{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: $color-green;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+}
+.form__radio-btn:checked+.form__radio-custom:after{
+  opacity: 1;
+}
+.form__radio-btn:checked+.form__radio-custom+.form__radio-text{
+  opacity: 1;
+}
+.form__checkbox-custom{
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+.form__checkbox-custom:after{
+  content: "";
+  background-image: url(../images/form/Галочка.png);
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 30%;
+  bottom: 0;
+  opacity: 0;
+}
+.form__checkbox-btn:checked+.form__checkbox-custom:after{
+  opacity: 1;
+}
+.form__checkbox-btn:checked+.form__checkbox-custom+.form__checkbox-text{
+  opacity: 1;
+}

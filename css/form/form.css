@@ -1,0 +1,18 @@
+.form {
+  display: flex; }
+
+.form__block {
+  display: flex;
+  width: 50%;
+  flex-direction: column; }
+
+.form__row {
+  display: flex; }
+
+.form__buttons {
+  display: flex; }
+
+.form__radio-checkbox-block {
+  display: flex; }
+
+/*# sourceMappingURL=form.css.map */

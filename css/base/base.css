@@ -44,7 +44,8 @@ button {
 
 a {
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
 address {
   font-style: normal; }
@@ -87,10 +88,6 @@ footer {
 
 .how-we-work {
   background-color: green;
-  text-align: center; }
-
-.delivery-form {
-  background-color: blueviolet;
   text-align: center; }
 
 /*# sourceMappingURL=base.css.map */

@@ -43,28 +43,26 @@
 }
 
 .welcome-content__icon {
-  height: 45px;
-  width: 45px;
   margin-right: 10px;
- 
-}
-.welcome-content__icon_leaf{
-  fill:none;
-  stroke:#ffffff;
-  stroke-width:0.8;
-  stroke-miterlimit:10;
+  height: 50px;
+  width: 50px;
+
 }
 
-.welcome-content__icon_car{
+.welcome-content__icon_leaf{
+  height: 45px;
+  width: 45px;
   fill:none;
-  stroke: #ffffff;
+  stroke:#b0f7ff;
   stroke-width:0.8;
   stroke-miterlimit:10;
 	
 }
 .welcome-content__icon_tape{
+  height: 45px;
+  width: 45px;
   fill:none;
-  stroke:#ffffff;
+  stroke:#b0f7ff;
   stroke-width:0.8;
   stroke-miterlimit:10;
 }
