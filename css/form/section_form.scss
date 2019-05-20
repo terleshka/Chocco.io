@@ -12,13 +12,18 @@
   font-weight: 700;
   font-size: rem(48px);
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   text-transform: uppercase;
 }
 .form-picture__position__absolute-blackberries{
   position: absolute;
   right: 0;
   top: rem(-150px);
+
+  @include phones{
+    width: 20%;
+    top: rem(-100px);
+   }
 }
 .form-picture__position__absolute-leaf{
   position: absolute;

@@ -9,6 +9,9 @@
     padding: 0 20%;
     margin-top: 5%;
   }
+  @include phones{
+    padding: 0 1%;
+   }
 }
 
 .form__block{

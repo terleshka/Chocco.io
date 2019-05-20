@@ -4,6 +4,11 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 5%;
+
+  @include phones{
+    width: 100%;
+    justify-content: center;
+   }
 }
 .socials__icon{
   margin-left: rem(20px);

@@ -7,10 +7,22 @@
   background-color: #fff;
   display: flex;
   align-items: center;
+
+  @include phones{
+    flex-direction: column;
+    justify-content: center;
+    min-height: rem(150px);
+   }
 }
 .address{
   width: 50%;
   margin-left: 5%;
+  @include phones{
+    text-align: center;
+    align-self: center;
+    margin-bottom: 5%;
+    margin-left: 0;
+   }
 }
 .phone-number--footer{
   display: block;
@@ -27,5 +39,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../images/footer/phone.png);
+  }
+
+  @include phones{
+    margin-top: 5%;
   }
 }

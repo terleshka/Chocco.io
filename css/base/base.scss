@@ -114,10 +114,16 @@ $color-green: #0f5a47;
 .slider{
   background-color: #f8faf9;
   text-align: center;
+  & h2{
+    margin-top: 50%;
+  }
 }
 
 .how-we-work{
   background-color: #f8faf9;
   text-align: center;
+  & h2{
+    margin-top: 50%;
+  }
 }
 

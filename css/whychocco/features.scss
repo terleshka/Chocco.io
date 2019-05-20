@@ -93,10 +93,10 @@
   font-weight: 300;
 
   @include tablets{
-    padding: 0 30%;
+    padding: 0 28%;
     align-items:center;
   }
   @include phones{
-   padding: 0 25%; 
+   padding: 0 20%; 
   }
 }

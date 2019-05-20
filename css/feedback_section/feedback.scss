@@ -7,7 +7,17 @@
   flex-direction: column;
   background-image: url(../images/feedback/berry.png);
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 100% 5%;
+  
+  @include phones{
+    background-position: 115% 3%
+  }
+}
+
+.feedback--container{
+  @include phones{
+    width: 100%;
+  }
 }
 .feedback-picture__position__absolute {
    
@@ -17,6 +27,9 @@
   left: 0;
   right: 0;
   z-index: 0;
+  @include phones{
+    width: 25%;
+   }
   }
   &-berries{
   position: absolute;
@@ -24,7 +37,11 @@
   left: 0;
   right: 0;
   z-index: 1;
+  
+  @include phones{
+   width: 30%;
   }
+}
 }
 
 .feedback__title {
@@ -33,6 +50,10 @@
   text-align: center;
   margin-top: rem(30px);
   text-transform: uppercase;
+
+  @include phones{
+    margin-top: 10%;
+  }
 }
 
 
@@ -52,6 +73,11 @@
     width:75%;
     margin: 0 auto;
     margin-top: 10%;
+  }
+  @include phones{
+    width: 100%;
+    height: rem(700px);
+    
   }
 }
 
