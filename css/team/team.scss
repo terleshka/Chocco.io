@@ -14,7 +14,7 @@
   height: 0;
 
   @include tablets{
-    width: 40%;
+    width: 71%;
    }
 }
 
@@ -24,13 +24,21 @@
   flex-flow: column wrap;
   align-items: center;
   
-  margin-right: rem(30px);
+  
   margin-top: 5%;
 
   @include tablets{
-    
+    width: 35%;
     margin-right: 0;
   }
+  @include phones{
+    width: 40%;
+    margin-right: 1rem;
+  }
+.team__item:nth-child(2n){
+  margin-right: 0;
+}
+  
 
   &:nth-child(2n) {
     margin-top: 10%;
@@ -42,7 +50,7 @@
 }
 .team__name{
   margin-top: 10%;
-  font-size: rem(20px);
+  font-size: 1 rem;
   font-weight: 500;
 
   @include tablets{
@@ -66,7 +74,7 @@
   }
 }
 .team__desc--active{
-  // overflow: visible;
+  overflow: visible;
 }
 .team__job{
   font-weight: bold;

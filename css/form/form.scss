@@ -1,7 +1,7 @@
 .form{
   display: flex;
   font-size: rem(18px);
-  padding: 7%;
+ 
 
   @include tablets{
     flex-direction: column;
@@ -10,7 +10,7 @@
     margin-top: 5%;
   }
   @include phones{
-    padding: 0 1%;
+    padding: 0%;
    }
 }
 
@@ -25,7 +25,8 @@
 }
 .form__row{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin:rem(10px);
 }

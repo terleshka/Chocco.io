@@ -1,15 +1,20 @@
 .accordion{
+  // position: absolute;
+  // height: 100%;
+  // right: 0;
+}
+
+.accordion__list{
   position: absolute;
   display: flex;
   height: 100%;
   right: 0;
-}
 
-.accordion__list{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  // @include phones{
+  //   left: 0;
+  //   transform: translateX(0);
+  //   }
+  
   
 }
 .accordion__item{
@@ -24,6 +29,9 @@
   align-items: flex-end;
   justify-content:center;
 
+  @include phones{
+    width: 4rem;
+    }
 }
 .accordion__title{
   font-size: rem(47px);
@@ -80,9 +88,10 @@
   margin-left: 10%;
   margin-right: 10%;
 }
-.accordion__desc--active{
-  width: 50%;
+.accordion__item--active .accordion__desc{
+  width: 33rem;
+
   @include phones{
-    width: 80%;
+  width: 20rem;
   }
 }

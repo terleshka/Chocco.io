@@ -1,3 +1,10 @@
+.container--footer{
+  flex-direction: row;
+  @include phones{
+    flex-direction: column;
+  }
+}
+
 .footer{
   position: absolute;
   bottom: 0;
@@ -16,7 +23,6 @@
 }
 .address{
   width: 50%;
-  margin-left: 5%;
   @include phones{
     text-align: center;
     align-self: center;

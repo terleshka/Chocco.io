@@ -4,18 +4,20 @@
   @include tablets{
     width: 100%;
     text-align: center;
-    margin-top: 50%;
-    padding: rem(50px);
-  }
+    }
   @include phones{
-    margin-top: auto;
-    padding-bottom:0 ;
+    
+    
 
   }
 }
 
 .welcome-content__block {
   margin-top: rem(78px);
+
+@include tablets{
+  margin-top: 0;
+}
 }
 
 .welcome-content__description {
@@ -26,7 +28,7 @@
     padding: 0 rem(150px);
   }
   @include phones{
-    padding: 0 rem(50px);
+    padding: 0 rem(70px);
   }
 }
 
@@ -36,6 +38,9 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: rem(5px);
+  @include phones{
+    font-size:rem(50px);
+  }
   
 }
 
@@ -94,4 +99,22 @@
 .btn_content {
   margin-top: rem(28px);
 
+}
+.welcome__chocco{
+  @include tablets{
+    width: 55%;
+  }
+  @include phones{
+    width: 85%;
+  }
+}
+.welcome__main{
+  display: flex;
+  justify-content: space-between;
+  height:100%;
+
+  @include tablets{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
