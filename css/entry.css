@@ -457,7 +457,7 @@ footer {
     .welcome-picture__position__absolute img {
       top: 25%;
       left: -60%;
-      z-index: 3; } }
+      z-index: 2; } }
   @media screen and (max-width: 480px) {
     .welcome-picture__position__absolute img {
       top: 20%;
@@ -626,6 +626,55 @@ footer {
     .welcome__main {
       flex-direction: column-reverse;
       align-items: center; } }
+
+.menu-adaptive {
+  position: absolute;
+  background-color: black;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+
+.menu-adaptive__list {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.menu-adaptive__link {
+  color: #fff;
+  font-size: 3rem;
+  opacity: 1; }
+
+.menu-adaptive__cross-close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5; }
+  .menu-adaptive__cross-close:hover {
+    opacity: 1; }
+  .menu-adaptive__cross-close:before, .menu-adaptive__cross-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: #fff; }
+  .menu-adaptive__cross-close:before {
+    transform: rotate(45deg); }
+  .menu-adaptive__cross-close:after {
+    transform: rotate(-45deg); }
 
 .whychocco {
   position: relative;
