@@ -40,7 +40,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -75,7 +74,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -189,7 +187,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -220,7 +217,6 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 [type="checkbox"], [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -288,37 +284,31 @@ template, [hidden] {
   src: local("MuseoSansCyrl-500"), url("../fonts/museo/MuseoSansCyrl-500.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
-
 @font-face {
   font-family: 'alegreya_sans';
   src: url("../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
-
 @font-face {
   font-family: 'alegreya_sans';
   src: url("../fonts/alegreyasans-extrabold-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-extrabold-webfont.woff") format("woff");
   font-weight: 800;
   font-style: normal; }
-
 @font-face {
   font-family: 'alegreya_sans';
   src: url("../fonts/alegreyasans-light-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
-
 @font-face {
   font-family: 'alegreya_sans';
   src: url("../fonts/alegreyasans-medium-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
-
 @font-face {
   font-family: 'alegreya_sans';
   src: url("../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
-
 html,
 body {
   height: 100%; }
@@ -371,18 +361,12 @@ address {
   font-style: normal; }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .container {
   width: 940px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%; }
 
@@ -390,12 +374,7 @@ address {
   height: 100vh;
   min-height: 650px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 footer {
@@ -410,7 +389,6 @@ footer {
   background-color: #fff;
   border-radius: 40px;
   padding: 16px 35px;
-  -webkit-box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
   box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
   cursor: pointer; }
 
@@ -477,14 +455,8 @@ footer {
   margin: 0 auto; }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 65px;
   margin-top: 11px; }
@@ -499,26 +471,15 @@ footer {
     width: 12px;
     height: 12px;
     margin-right: 10px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../images/header/phone.png); }
 
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .logo {
@@ -561,14 +522,8 @@ footer {
 .welcome-content__features {
   margin-top: auto;
   margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   font-size: 16px; }
 
@@ -579,12 +534,7 @@ footer {
 .welcome-content__item {
   margin-top: 65px;
   margin-right: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row; }
 
 .welcome-content__icon {
@@ -601,12 +551,7 @@ footer {
   height: 100vh;
   width: 100vw;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../images/why_chocco/leaf.png);
   background-repeat: no-repeat;
@@ -622,8 +567,6 @@ footer {
   margin-top: 94px; }
 
 .whychocco__desc {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
   width: 49%;
   line-height: 1.3;
@@ -640,28 +583,16 @@ footer {
   z-index: 0; }
 
 .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .features__desc {
   text-align: center; }
 
 .features__item {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-line-pack: justify;
   align-content: space-between;
   margin-right: 30px; }
   .features__item:after {
@@ -712,12 +643,7 @@ footer {
   height: 100vh;
   width: 100vw;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../images/feedback/berry.png);
   background-repeat: no-repeat;
@@ -729,7 +655,6 @@ footer {
   left: 0;
   right: 0;
   z-index: 0; }
-
 .feedback-picture__position__absolute-berries {
   position: absolute;
   bottom: -192px;
@@ -746,8 +671,6 @@ footer {
 
 .feedback__active {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 350px;
   width: 100%;
@@ -762,15 +685,8 @@ footer {
   margin-left: 45px; }
 
 .feedback__desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 20px;
   font-weight: normal; }
@@ -790,11 +706,7 @@ footer {
   font-size: 18px; }
 
 .avatars {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .avatar__img {
@@ -822,3 +734,5 @@ footer {
 .avatar__img_active {
   border: 8px solid #0f5a47;
   border-radius: 50%; }
+
+/*# sourceMappingURL=entry.css.map */
