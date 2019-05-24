@@ -574,42 +574,35 @@ footer {
       font-size: 3.125rem; } }
 
 .welcome-content__features {
-  margin-top: auto;
-  margin-bottom: 2.5rem;
+  margin: 2rem 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-between;
   font-size: 1rem; }
   @media screen and (max-width: 768px) {
     .welcome-content__features {
       justify-content: center; } }
 
 .welcome-content__desc {
-  width: 4.6875rem;
+  text-align: left;
+  margin-left: 0.5rem;
   line-height: 1.3; }
 
 .welcome-content__item {
-  margin-top: 4.0625rem;
-  margin-right: 3.125rem;
   display: flex;
-  flex-direction: row; }
+  align-items: center;
+  width: 33%; }
 
 .welcome-content__icon {
-  margin-right: 0.625rem;
-  height: 3.125rem;
-  width: 3.125rem; }
+  height: 3rem;
+  width: 50%; }
 
 .welcome-content__icon_leaf {
-  height: 2.8125rem;
-  width: 2.8125rem;
   fill: none;
   stroke: #b0f7ff;
   stroke-width: 0.8;
   stroke-miterlimit: 10; }
 
 .welcome-content__icon_tape {
-  height: 2.8125rem;
-  width: 2.8125rem;
   fill: none;
   stroke: #b0f7ff;
   stroke-width: 0.8;
@@ -905,7 +898,8 @@ footer {
 .avatar_three {
   background-image: url(../images/feedback/vadim_small.jpg);
   background-repeat: no-repeat;
-  background-position: 45% 35%; }
+  background-position: 45% 35%;
+  margin-right: 0; }
 
 .avatar__img_active {
   border: 8px solid #0f5a47;
@@ -943,16 +937,21 @@ footer {
 
 .team__desc {
   text-align: center;
-  overflow: hidden;
-  height: 0; }
+  display: none;
+  font-weight: lighter; }
   @media screen and (max-width: 768px) {
     .team__desc {
       width: 71%; } }
+  @media screen and (max-width: 480px) {
+    .team__desc {
+      width: 100%;
+      font-size: 0.9375rem; } }
 
 .team__item {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  width: 25%;
   margin-top: 5%; }
   @media screen and (max-width: 768px) {
     .team__item {
@@ -972,11 +971,15 @@ footer {
 
 .team__name {
   margin-top: 10%;
-  font-size: 1 rem;
-  font-weight: 500; }
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 3%; }
   @media screen and (max-width: 768px) {
     .team__name {
       margin-top: 5%; } }
+  @media screen and (max-width: 480px) {
+    .team__name {
+      font-size: 1rem; } }
 
 .team__name h3 {
   font-weight: bold;
@@ -992,10 +995,13 @@ footer {
     border-top: 7px solid #0f5a47; }
 
 .team__desc--active {
-  overflow: visible; }
+  display: block; }
 
 .team__job {
   font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .team__job {
+      font-size: 1.125rem; } }
 
 .menu-accordion {
   position: relative;
@@ -1191,7 +1197,7 @@ footer {
   display: flex; }
 
 .form__radio {
-  width: 40%; }
+  width: 45%; }
 
 .form__label-input {
   display: flex;

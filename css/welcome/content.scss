@@ -5,11 +5,7 @@
     width: 100%;
     text-align: center;
     }
-  @include phones{
-    
-    
 
-  }
 }
 
 .welcome-content__block {
@@ -45,11 +41,9 @@
 }
 
 .welcome-content__features {
-  margin-top: auto;
-  margin-bottom: rem(40px);
+  margin:2rem 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-between;
   font-size: rem(16px);
 
   @include tablets{
@@ -58,28 +52,23 @@
 }
 
 .welcome-content__desc {
-  width: rem(75px);
+  text-align: left;
+  margin-left: 0.5rem;
   line-height: 1.3;
 }
 
 .welcome-content__item {
-  margin-top: rem(65px);
-  margin-right: rem(50px);
   display: flex;
-  flex-direction: row;
-
+  align-items: center;
+  width: 33%;
 }
 
 .welcome-content__icon {
-  margin-right: rem(10px);
-  height: rem(50px);
-  width: rem(50px);
-
+  height: 3rem;
+  width: 50%;
 }
 
 .welcome-content__icon_leaf{
-  height: rem(45px);
-  width: rem(45px);
   fill:none;
   stroke:#b0f7ff;
   stroke-width:0.8;
@@ -87,8 +76,6 @@
 	
 }
 .welcome-content__icon_tape{
-  height: rem(45px);
-  width: rem(45px);
   fill:none;
   stroke:#b0f7ff;
   stroke-width:0.8;

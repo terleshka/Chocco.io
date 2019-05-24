@@ -9,6 +9,7 @@
   margin-right: rem(40px);
   margin-top: rem(40px);
 }
+
 .avatar_one{
   background-image: url(../images/feedback/alena_small.jpg);
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@
   background-image: url(../images/feedback/vadim_small.jpg);
   background-repeat: no-repeat;
   background-position: 45% 35%;
+  margin-right: 0;
 }
 .avatar__img_active{
   border: 8px solid $color-green;
