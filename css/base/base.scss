@@ -93,9 +93,10 @@ address {
   flex-direction: column;
   z-index: 3;
 
-  // @include phones{
-  //  min-height: rem(930px);
-  // }
+  @include phones{
+   height: auto;
+   padding: 5% 0;
+  }
 }
 
 footer {
@@ -118,13 +119,6 @@ $color-green: #0f5a47;
   cursor: pointer;
 }
 // для визуализации
-.slider{
-  background-color: #f8faf9;
-  text-align: center;
-  & h2{
-    margin-top: 50%;
-  }
-}
 
 .how-we-work{
   background-color: #f8faf9;

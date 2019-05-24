@@ -1,14 +1,11 @@
-.accordion{
-  // position: absolute;
-  // height: 100%;
-  // right: 0;
-}
+
 
 .accordion__list{
   position: absolute;
   display: flex;
   height: 100%;
   right: 0;
+  top: 0;
 
   // @include phones{
   //   left: 0;

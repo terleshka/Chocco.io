@@ -1,0 +1,20 @@
+.slider__block{
+  display: flex;
+}
+
+.slider__info{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.slider__pic{
+  width: 60%;
+}
+.slider__desc{
+  display: flex;
+  flex-direction: column;
+}
+.slider__row{
+  display: flex;
+  flex-wrap: wrap;
+}
