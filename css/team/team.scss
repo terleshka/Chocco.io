@@ -1,0 +1,100 @@
+.team__list {
+  display: flex;
+
+  @include tablets {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.team__desc {
+  text-align: center;
+  display: none;
+  font-weight: lighter;
+
+  @include tablets {
+    width: 71%;
+  }
+
+  @include phones {
+    width: 100%;
+    font-size: rem(15px);
+  }
+}
+
+.team__item {
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 25%;
+  margin-top: 5%;
+
+  @include tablets {
+    width: 35%;
+    margin-right: 0;
+  }
+
+  @include phones {
+    width: 40%;
+    margin-right: 1rem;
+  }
+
+  .team__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+
+  &:nth-child(2n) {
+    margin-top: 10%;
+
+    @include tablets {
+      margin-top: 5%;
+    }
+  }
+}
+
+.team__name {
+  margin-top: 10%;
+  font-size: rem(18px);
+  font-weight: 500;
+  margin-bottom: 3%;
+
+  @include tablets {
+    margin-top: 5%;
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
+}
+
+.team__name h3 {
+  font-weight: bold;
+  vertical-align: middle;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-flex;
+    margin-left: rem(10px);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid $color-green;
+
+  }
+}
+
+.team__desc--active {
+  display: block;
+}
+
+.team__job {
+  font-weight: bold;
+
+  @include tablets {
+    font-size: rem(18px);
+  }
+}

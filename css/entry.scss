@@ -1,3 +1,9 @@
+//breakpoints
+$tablets:768px;
+$phones:480px;
+
+@import "./base/media.scss";
+
 @import "./base/normalize.scss";
 
 @import "./base/fonts.scss";
@@ -6,6 +12,7 @@
 
 @import "./welcome/first.scss";
 @import "./welcome/header.scss";
+@import "./welcome/hamburger.scss";
 @import "./welcome/menu.scss";
 @import "./welcome/content.scss";
 
@@ -15,4 +22,15 @@
 @import "./feedback_section/feedback.scss";
 @import "./feedback_section/avatars.scss"; 
 
-// @import "./sprite.svg";
+@import "./team/section_team.scss"; 
+@import "./team/team.scss"; 
+
+@import "./menu_accordion/section_accordion.scss"; 
+@import "./menu_accordion/accordion.scss";
+
+@import "./form/section_form.scss";
+@import "./form/form.scss";
+
+@import "./contacts/map.scss"; 
+@import "./contacts/footer.scss"; 
+@import "./contacts/socials.scss"; 

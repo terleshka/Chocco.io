@@ -49,7 +49,7 @@
             <div class="welcome-picture__position__absolute">
                 <img src="./images/main/welcome_absolute.png">
             </div>
-            <div class="container">
+            <div class="container first-container">
                 <header class="header">
                     <div class="logo">CHO
                         <br>CCO</div>
@@ -79,43 +79,52 @@
                         </ul>
                     </nav>
                     <a href="tel:+788009039090" class="phone-number">8 800 903 90 90</a>
+                    <a href="" class="hamburger__link">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </a>
                 </header>
+                <div class="welcome__main">
+                    <div class="welcome-content">
+                        <div class="welcome-content__block">
+                            <h1 class="title">Натуральные шоколадные батончики</h1>
+                            <p class="welcome-content__description">Наши батончики идеально подходят для тех, кто следит
+                                за
+                                своим
+                                здоровьем
+                            </p>
 
-                <div class="welcome-content">
-                    <div class="welcome-content__block">
-                        <h1 class="title">Натуральные шоколадные батончики</h1>
-                        <p class="welcome-content__description">Наши батончики идеально подходят для тех, кто следит за
-                            своим
-                            здоровьем
-                        </p>
-
-                        <a href="#" class="btn btn_content">Заказать
-                        </a>
+                            <a href="#" class="btn btn_content">Заказать
+                            </a>
+                            <ul class="welcome-content__features">
+                                <li class="welcome-content__item">
+                                    <svg class="welcome-content__icon welcome-content__icon_leaf">
+                                        <use x="0" y="0" xlink:href="./css/sprite.svg#leaf" />
+                                    </svg>
+                                    <p class="welcome-content__desc">100% натуральный продукт</p>
+                                </li>
+                                <li class="welcome-content__item">
+                                    <svg class="welcome-content__icon welcome-content__icon_car">
+                                        <use xlink:href="./css/sprite.svg#car" />
+                                    </svg>
+                                    <p class="welcome-content__desc">3-5 дней доставка по РФ</p>
+                                </li>
+                                <li class="welcome-content__item">
+                                    <svg class="welcome-content__icon welcome-content__icon_tape">
+                                        <use xlink:href="./css/sprite.svg#tape" />
+                                    </svg>
+                                    <p class="welcome-content__desc">Не портит фигуру</p>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
-                    <ul class="welcome-content__features">
-                        <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_leaf">
-                                <use x="0" y="0"xlink:href="./css/sprite.svg#leaf"/>
-                            </svg>
-                            <p class="welcome-content__desc">100% натуральный продукт</p>
-                        </li>
-                        <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_car">
-                                <use xlink:href="./css/sprite.svg#car"/>
-                            </svg>
-                            <p class="welcome-content__desc">3-5 дней доставка по РФ</p>
-                        </li>
-                        <li class="welcome-content__item">
-                            <svg class="welcome-content__icon welcome-content__icon_tape">
-                                <use xlink:href="./css/sprite.svg#tape"/>
-                            </svg>
-                            <p class="welcome-content__desc">Не портит фигуру</p>
-                        </li>
-                    </ul>
+                    <div class="welcome__chocco">
+                        <img src="./images/main/candy.png" alt="chocco" class="welcom__chocco-img">
+                    </div>
                 </div>
             </div>
-
         </section>
         <section class="section whychocco">
             <div class="whychocco-picture__position__absolute">
@@ -130,7 +139,10 @@
 
                 <ul class="features__list">
                     <li class="features__item">
-                        <div class="features__icon features__icon--man">
+                        <div class="features__icon ">
+                            <svg class="features__icon features__icon--man">
+                                <use xlink:href="./css/sprite.svg#man" />
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Полезно</h3>
@@ -141,7 +153,10 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div class="features__icon features__icon--smile">
+                        <div class="features__icon ">
+                            <svg class="features__icon features__icon--smile">
+                                <use xlink:href="./css/sprite.svg#smile" />
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Вкусно</h3>
@@ -152,7 +167,10 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div class="features__icon features__icon--power">
+                        <div class="features__icon ">
+                            <svg class="features__icon--power">
+                                <use xlink:href="./css/sprite.svg#power" />
+                            </svg>
                         </div>
                         <div class="features__desc">
                             <h3 class="features__title">Питательно</h3>
@@ -179,51 +197,43 @@
                 <h2 class="team__title">КОМАНДА</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="" alt="boris" class="team__photo">
+                        <img src="./images/team/boris.jpg" alt="boris" class="team__photo">
                         <div class="team__name">
                             <h3>Борис Федорович</h3>
                         </div>
-                        <div class="team__desc">
-                            <h4 class="team__job">Оператор</h4>
-                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
-                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        <div class="team__desc team__desc--active">
+                            <h4 class="team__job">Главный технолог</h4>
+                            <p class="team__text">Отвечает за вкусовые качества и калорийность</p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="" alt="boris" class="team__photo">
+                        <img src="./images/team/alla.jpg" alt="alla" class="team__photo">
                         <div class="team__name">
                             <h3>Алла Иванова</h3>
                         </div>
                         <div class="team__desc">
-                            <h4 class="team__job">Оператор</h4>
-                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
-                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                            <h4 class="team__job">Специалист по упаковке</h4>
+                            <p class="team__text">Автор запоминающегося стиля наших батончиков</p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="" alt="boris" class="team__photo">
+                        <img src="./images/team/kirill.jpg" alt="kirill" class="team__photo">
                         <div class="team__name">
                             <h3>Кирилл Матросов</h3>
                         </div>
-                        <div class="team__desc">
+                        <div class="team__desc ">
                             <h4 class="team__job">Оператор</h4>
-                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
-                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                            <p class="team__text">С радостью поможет подобрать батончики и оформить заказ</p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="" alt="boris" class="team__photo">
+                        <img src="./images/team/mila.jpg" alt="mila" class="team__photo">
                         <div class="team__name">
                             <h3>Мила Рыжкова</h3>
                         </div>
-                        <div class="team__desc">
-                            <h4 class="team__job">Оператор</h4>
-                            <p class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                                hic facere, blanditiis autem dolores ea commodi architecto iure eius illo iste
-                                excepturi, esse quas nihil fugit dolor quam dignissimos vel?</p>
+                        <div class="team__desc ">
+                            <h4 class="team__job">PR, маркетинг</h4>
+                            <p class="team__text">По всем вопросам сотрудничества и рекламы только Миле</p>
                         </div>
                     </li>
                 </ul>
@@ -233,54 +243,51 @@
             <div class="menu-accordion-picture__position__absolute">
                 <img src="./images/team/berry.png">
             </div>
+            <h2 class="menu-accordion__title">МЕНЮ</h2>
             <div class="accordion">
-                <h2 class="accordion__title">МЕНЮ</h2>
                 <ul class="accordion__list">
                     <li class="accordion__item accordion__item--active">
-                        <div class="accordion___vertical-block">
-                            <h3 class="accordion__vertical-block-title">Батончики с молоком</h3>
-                        </div>
+                        <a href="" class="accordion__link accordion-bg-milk">
+                            <h3 class="accordion__title">Батончики с молоком</h3>
+                        </a>
                         <div class="accordion__desc">
                             <p class="accordion__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
-                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
-                                error cumque nisi provident autem est veniam?
+                                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                вкуснее, и полезнее.
+                                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                                классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                                еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить
+                                с днём Победы.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__item">
+                        <a href="" class="accordion__link accordion-bg-honey">
+                            <h3 class="accordion__title">С медом и фруктами</h3>
+                        </a>
+                        <div class="accordion__desc">
+                            <p class="accordion__text">
+                                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                вкуснее, и полезнее.
+                                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                                классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                                еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить
+                                с днём Победы.
                             </p>
                         </div>
                     </li>
                     <li class="accordion__item ">
-                        <div class="accordion___vertical-block">
-                            <h3 class="accordion__vertical-block-title">Батончики с молоком</h3>
-                        </div>
+                        <a href="" class="accordion__link accordion-bg-berries">
+                            <h3 class="accordion__title">Дикие ягоды</h3>
+                        </a>
                         <div class="accordion__desc">
                             <p class="accordion__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
-                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
-                                error cumque nisi provident autem est veniam?
-                            </p>
-                        </div>
-                    </li>
-                    <li class="accordion__item">
-                        <div class="accordion___vertical-block">
-                            <h3 class="accordion__vertical-block-title">С медом и фруктами</h3>
-                        </div>
-                        <div class="accordion__desc">
-                            <p class="accordion__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
-                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
-                                error cumque nisi provident autem est veniam?
-                            </p>
-                        </div>
-                    </li>
-                    <li class="accordion__item">
-                        <div class="accordion___vertical-block">
-                            <h3 class="accordion__vertical-block-title">Дикие ягоды</h3>
-                        </div>
-                        <div class="accordion__desc">
-                            <p class="accordion__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore laborum minima.
-                                Id molestiae praesentium aspernatur maiores, velit quasi adipisci. Eos dolorum amet
-                                error cumque nisi provident autem est veniam?
+                                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
+                                вкуснее, и полезнее.
+                                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как
+                                классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую
+                                еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить
+                                с днём Победы.
                             </p>
                         </div>
                     </li>
@@ -292,12 +299,12 @@
                 <img class="feedback-picture__position__absolute-leaf" src="./images/feedback/design_leaf.png">
                 <img class="feedback-picture__position__absolute-berries" src="./images/feedback/berries.png">
             </div>
-            <div class="container">
+            <div class="container feedback--container">
                 <h2 class="feedback__title">Отзывы</h2>
                 <div class="feedback__body">
                     <div class="feedback__active">
                         <div class="feedback__avatar">
-                            <img src="./images/feedback/alena.jpg" alt="alena" class="feedback__pic">
+                            <img src="./images/feedback/alena_rect.jpg" alt="alena" class="feedback__pic">
                         </div>
                         <div class="feedback__desc">
                             <div class="feedback__desc-title">Лучший перекус</div>
@@ -331,10 +338,131 @@
             <h2>Как мы работаем?</h2>
         </section>
         <section class="section delivery-form">
-            <h2>Закажи доставку</h2>
+            <div class="form-picture__position__absolute">
+                <img class="form-picture__position__absolute-blackberries" src="./images/how_we_work/blackberry.png">
+                <img class="form-picture__position__absolute-leaf" src="./images/form/leaf.png">
+                <img class="form-picture__position__absolute-berry" src="./images/form/berry (2).png">
+            </div>
+            <div class="container container-form">
+                <div class="delivery-form__title">
+                    <h2>Закажите доставку</h2>
+                </div>
+                <form class="form" method="POST" action="">
+                    <div class="form__block">
+                        <div class="form__row">
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Имя</div>
+                                    <input type="text" class="form__input width-m" name="name">
+                                </label>
+                            </div>
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Телефон</div>
+                                    <input type="text" class="form__input width-m" name="phone"
+                                        placeholder="89022348955">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Улица</div>
+                                    <input type="text" class="form__input width-l" name="street">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Дом</div>
+                                    <input type="text" class="form__input width-s" name="house">
+                                </label>
+                            </div>
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Корпус</div>
+                                    <input type="text" class="form__input width-s" name="building">
+                                </label>
+                            </div>
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Квартира</div>
+                                    <input type="text" class="form__input width-s" name="apartament">
+                                </label>
+                            </div>
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Этаж</div>
+                                    <input type="text" class="form__input width-s" name="floor">
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form__block">
+                        <div class="form__row">
+                            <div class="form__label-input">
+                                <label class="form__label">
+                                    <div class="form__label-title">Комментарий</div>
+                                    <textarea type="text" class="form__textarea" name="comment" cols="30"
+                                        rows="5"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__radio-checkbox-block">
+                                <div class="form__radio">
+                                    <label class="form__label-radio" tabindex="0">
+                                        <input type="radio" name="payment" value="cash-only" class="form__radio-btn">
+                                        <div class="form__radio-custom"></div>
+                                        <div class="form__radio-text">Потребуется сдача</div>
+                                    </label>
+                                </div>
+                                <div class="form__radio">
+                                    <label class="form__label-radio" tabindex="0">
+                                        <input type="radio" name="payment" value="bycard" class="form__radio-btn"
+                                            checked>
+                                        <div class="form__radio-custom"></div>
+                                        <div class="form__radio-text">Оплата по карте</div>
+                                    </label>
+                                </div>
+                                <div class="form__checkbox">
+                                    <label class="form__label-checkbox" tabindex="0">
+                                        <input type="checkbox" name="notcall" value="" class="form__checkbox-btn"
+                                            checked>
+                                        <div class="form__checkbox-custom"></div>
+                                        <div class="form__checkbox-text">Не перезванивать</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__buttons">
+                            <button type="submit" class="form__submit btn">Заказать</button>
+                            <button type="reset" class="form__reset">Очистить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <section class="section contacts">
-            <h2>Карта и футер</h2>
+            <div class="contacts__marker">
+                <img src="./images/map/marker.png" alt="" class="contacts__marker-pos-abs">
+            </div>
+            <footer class="footer">
+                <div class="container container--footer">
+                    <address class="address">
+                        <p class="address__text">Москва, ул. Новый Арбат, д.31/12</p>
+                        <a href="tel:+788009039090" class="phone-number phone-number--footer">8 800 903 90 90</a>
+                    </address>
+                    <div class="socials">
+                        <a class="socials__icon socials__icon--vk"></a>
+                        <a class="socials__icon socials__icon--fb"></a>
+                        <a class="socials__icon socials__icon--inst"></a>
+                        <a class="socials__icon socials__icon--twit"></a>
+                    </div>
+                </div>
+            </footer>
         </section>
     </div>
 </body>

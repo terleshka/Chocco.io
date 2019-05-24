@@ -4,26 +4,31 @@
   justify-content: space-between;
   align-items: center;
 
+  @include tablets{
+    display: none;
+    
+  }
 }
 
 @mixin menuitem {
   color: #fff;
-  line-height: 30px;
+  line-height: rem(30px);
   font-weight: normal;
-  font-size: 24px;
+  font-size: rem(24px);
+  white-space: nowrap;
 }
 
 .logo {
   @include menuitem;
-  line-height: 21px;
+  line-height: rem(21px);
   font-family: 'Museo_Sans', 'Museo Sans Cyrl', sans-serif;
   font-weight: 500;
 }
 .menu__item{
-  margin-right: 16px;
+  margin-right: rem(16px);
 }
 
 .menu__link {
   @include menuitem;
-  font-size: 18px;
+  font-size: rem(18px);
 }
