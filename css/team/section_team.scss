@@ -9,12 +9,20 @@
   top: rem(-237px);
   right: 0;
   z-index: 0;
+
+  @include phones{
+    width: 35%;
+  }
   }
   &-berries{
   position: absolute;
   top: rem(-64px);
   right: rem(16px);
   z-index: 1;
+  @include phones{
+    width: 20%;
+    right: -2%;
+  }
   }
 }
 .team__title {

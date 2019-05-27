@@ -79,13 +79,13 @@
                         </ul>
                     </nav>
                     <a href="tel:+788009039090" class="phone-number">8 800 903 90 90</a>
-                    <a href="" class="hamburger__link">
+                    <div class="hamburger__link" id="menuOpen">
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
-                    </a>
-                    <div class="menu-adaptive">
-                        <a class="menu-adaptive__cross-close"></a>
+                    </div>
+                    <div class="menu-adaptive" id="menuModal">
+                        <a class="menu-adaptive__cross-close" id="menuClose"></a>
                         <ul class="menu-adaptive__list">
                             <li class="menu-adaptive__item">
                                 <a href="#" class="menu-adaptive__link">О нас</a>
@@ -109,8 +109,6 @@
                                 <a href="#" class="menu-adaptive__link">Контакты</a>
                             </li>
                         </ul>
-
-
                     </div>
                 </header>
                 <div class="welcome__main">
@@ -214,22 +212,29 @@
             </div>
         </section>
         <section class="section slider">
-            <img src="./images/slider/foliage.png" alt="" class="slider__pic-position-absolute">
             <div class="slider__container">
                 
                 <div class="slider__arrow">
                     <a href="#" class="arrow-previos"></a>
                 </div>
                 <div class="slider__block">
-                    <div class="slider__pic"><img src="" alt="" class="slider__img"></div>
+                    <div class="slider__pic">
+                        <div class="slider__pic-oval"></div>
+                        <div class="slider__pic-oval-two"></div>
+                        <img src="./images/slider/1slide/Батончики.png" alt="chockolate" class="slider__img">
+                    </div>
                     <div class="slider__info">
-                        <h2 class="slider__title">Батончик "Морские водоросли"</h2>
                         <div class="slider__desc">
+                            <h2 class="slider__title">Батончик "Морские водоросли"</h2>
                             <div class="slider__row">
                                 <h3 class="slider__composition-title">Состав:</h3>
-                                <p class="slider__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
-                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
                             </div>
+                            <div class="slider__row">
+                                <p class="slider__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
+                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                </p>
+                            </div>
+
                             <div class="slider__row">
                                 <div class="slider__calories">
                                     <h3 class="slider__calories-title">Калорийность</h3>
@@ -240,8 +245,8 @@
                                     <div class="slider__weight-value">98 грамм</div>
                                 </div>
                             </div>
-                            <div class="slider__row">
-                                <div class="slider__cost">140 Р</div>
+                            <div class="slider__row last--row">
+                                <div class="slider__cost">140 &#8381</div>
                                 <div class="btn slider--btn">ЗАКАЗАТЬ</div>
                             </div>
                         </div>
@@ -529,6 +534,7 @@
             </footer>
         </section>
     </div>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>

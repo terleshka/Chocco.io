@@ -26,7 +26,7 @@
   right: 0;
   z-index: 0;
   @include phones{
-    width: 25%;
+    width: 20%;
    }
   }
   &-berries{
@@ -37,7 +37,9 @@
   z-index: 1;
   
   @include phones{
-   width: 30%;
+   width: 25%;
+   bottom: rem(-170px);
+   left: -5%;
   }
 }
 }

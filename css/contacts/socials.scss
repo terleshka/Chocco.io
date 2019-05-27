@@ -14,6 +14,11 @@
   margin-left: rem(20px);
   transition: 0.3ms;
   opacity: 0.5;
+
+  @include phones{
+    background-size: cover;
+   }
+
 }
 .socials__icon:hover{
   opacity: 1;

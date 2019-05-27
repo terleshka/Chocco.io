@@ -14,7 +14,8 @@
   z-index: 1;
 
   @include phones{
-    top: rem(-80px);
+    top: rem(-60px);
+    width: 15%;
   }
 }
 .menu-accordion__title{

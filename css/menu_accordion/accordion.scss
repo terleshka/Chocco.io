@@ -6,13 +6,7 @@
   height: 100%;
   right: 0;
   top: 0;
-
-  // @include phones{
-  //   left: 0;
-  //   transform: translateX(0);
-  //   }
-  
-  
+ 
 }
 .accordion__item{
   height: 100%;
@@ -91,4 +85,8 @@
   @include phones{
   width: 20rem;
   }
+  @include phones{
+    left: 0;
+    transform: translateX(0);
+    }
 }
