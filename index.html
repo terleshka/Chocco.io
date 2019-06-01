@@ -11,6 +11,32 @@
 
 <body>
     <div class="wrapper">
+        <div class="menu-adaptive" id="menuModal">
+            <a class="menu-adaptive__cross-close" id="menuClose"></a>
+            <ul class="menu-adaptive__list">
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">О нас</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Батончики</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Команда</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Меню</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Отзывы</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Как мы рыботаем</a>
+                </li>
+                <li class="menu-adaptive__item">
+                    <a href="#" class="menu-adaptive__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
         <div class="sidebar">
 
             <nav class="nav">
@@ -84,32 +110,7 @@
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
                     </div>
-                    <div class="menu-adaptive" id="menuModal">
-                        <a class="menu-adaptive__cross-close" id="menuClose"></a>
-                        <ul class="menu-adaptive__list">
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">О нас</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Батончики</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Команда</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Меню</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Отзывы</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Как мы рыботаем</a>
-                            </li>
-                            <li class="menu-adaptive__item">
-                                <a href="#" class="menu-adaptive__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </header>
                 <div class="welcome__main">
                     <div class="welcome-content">
@@ -211,49 +212,85 @@
 
             </div>
         </section>
-        <section class="section slider">
+        <section class="section slider-section">
             <div class="slider__container">
-                
-                <div class="slider__arrow">
-                    <a href="#" class="arrow-previos"></a>
-                </div>
-                <div class="slider__block">
-                    <div class="slider__pic">
-                        <div class="slider__pic-oval"></div>
-                        <div class="slider__pic-oval-two"></div>
-                        <img src="./images/slider/1slide/Батончики.png" alt="chockolate" class="slider__img">
-                    </div>
-                    <div class="slider__info">
-                        <div class="slider__desc">
-                            <h2 class="slider__title">Батончик "Морские водоросли"</h2>
-                            <div class="slider__row">
-                                <h3 class="slider__composition-title">Состав:</h3>
-                            </div>
-                            <div class="slider__row">
-                                <p class="slider__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
-                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
-                                </p>
-                            </div>
 
-                            <div class="slider__row">
-                                <div class="slider__calories">
-                                    <h3 class="slider__calories-title">Калорийность</h3>
-                                    <div class="slider__calories-value">120 ккал</div>
+                <div class="slider__arrow" id="left">
+                    <a class="arrow-previos"></a>
+                </div>
+                <div class="slider">
+                    <div class="slider__items" id="items">
+                    <div class="slider__screen first-slide">
+                        <div class="slider__pic">
+                           <img src="./images/slider/first_slide.png" alt="chockolate" class="slider__img">
+                        </div>
+                        <div class="slider__info">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Батончик “Морские водоросли”</h2>
+                                <div class="slider__row">
+                                    <h3 class="slider__composition-title">Состав:</h3>
                                 </div>
-                                <div class="slider__weight">
-                                    <h3 class="slider__weight-title">Вес</h3>
-                                    <div class="slider__weight-value">98 грамм</div>
+                                <div class="slider__row">
+                                    <p class="slider__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
+                                        семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="slider__row last--row">
-                                <div class="slider__cost">140 &#8381</div>
-                                <div class="btn slider--btn">ЗАКАЗАТЬ</div>
+
+                                <div class="slider__row">
+                                    <div class="slider__calories">
+                                        <h3 class="slider__calories-title">Калорийность</h3>
+                                        <div class="slider__calories-value">120 ккал</div>
+                                    </div>
+                                    <div class="slider__weight">
+                                        <h3 class="slider__weight-title">Вес</h3>
+                                        <div class="slider__weight-value">98 грамм</div>
+                                    </div>
+                                </div>
+                                <div class="slider__row last--row">
+                                    <div class="slider__cost">140 &#8381</div>
+                                    <a class="btn slider--btn">ЗАКАЗАТЬ</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="slider__screen second-slide">
+                        <div class="slider__pic">
+                            <img src="./images/slider/second_slider.png" alt="chockolate" class="slider__img">
+                        </div>
+                        <div class="slider__info">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Батончик “Гранола
+                                    виноград”</h2>
+                                <div class="slider__row">
+                                    <h3 class="slider__composition-title">Состав:</h3>
+                                </div>
+                                <div class="slider__row">
+                                    <p class="slider__text">Гранола из винограда, грецкого ореха и кунжутных семечек. В
+                                        состав также входят: сухое молоко, заменитель сахара и какао бобы
+                                    </p>
+                                </div>
+
+                                <div class="slider__row">
+                                    <div class="slider__calories">
+                                        <h3 class="slider__calories-title">Калорийность</h3>
+                                        <div class="slider__calories-value">110 ккал</div>
+                                    </div>
+                                    <div class="slider__weight">
+                                        <h3 class="slider__weight-title">Вес</h3>
+                                        <div class="slider__weight-value">95 грамм</div>
+                                    </div>
+                                </div>
+                                <div class="slider__row last--row">
+                                    <div class="slider__cost">140 &#8381</div>
+                                    <a class="btn slider--btn">ЗАКАЗАТЬ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="slider__arrow">
-                    <a href="#" class="arrow-next"></a>
+                <div class="slider__arrow" id="right">
+                    <a class="arrow-next"></a>
                 </div>
             </div>
         </section>
@@ -270,7 +307,7 @@
                         <div class="team__name">
                             <h3>Борис Федорович</h3>
                         </div>
-                        <div class="team__desc team__desc--active">
+                        <div class="team__desc">
                             <h4 class="team__job">Главный технолог</h4>
                             <p class="team__text">Отвечает за вкусовые качества и калорийность</p>
                         </div>

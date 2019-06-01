@@ -82,7 +82,9 @@
   border: none;
   padding: rem(10px);
   font-size: rem(18px);
-  
+  &:focus{
+    border: 1px solid $color-green;
+  }
 }
 .width-m{
   width: 100%;
@@ -96,6 +98,9 @@
   padding: rem(10px);
   font-size: rem(18px);
   resize: none;
+  &:focus{
+    border: 1px solid $color-green;
+  }
 }
 .form__submit{
   color: #fff;
@@ -110,6 +115,9 @@
   cursor: pointer;
   color: $color-green;
   font-size: rem(18px);
+  &:active{
+    opacity: 0.8;
+  }
 }
 .form__checkbox{
   @include tablets{

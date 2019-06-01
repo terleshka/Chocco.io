@@ -8,7 +8,8 @@
   background-position: 100% 5%;
   
   @include phones{
-    background-position: 115% 3%
+    background-position: 115% 3%;
+    background-size: 33%;
   }
 }
 

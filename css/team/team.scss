@@ -10,8 +10,10 @@
 
 .team__desc {
   text-align: center;
-  display: none;
+  height: 0;
+  opacity: 0;
   font-weight: lighter;
+  transition: all 0.4s ease-out;
 
   @include tablets {
     width: 71%;
@@ -24,7 +26,7 @@
 }
 
 .team__item {
-
+  transition: 0.4s;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -54,12 +56,15 @@
     }
   }
 }
-
+.team__photo{
+  transition: 0.4s;
+}
 .team__name {
   margin-top: 10%;
   font-size: rem(18px);
   font-weight: 500;
   margin-bottom: 3%;
+  cursor: pointer;
 
   @include tablets {
     margin-top: 5%;
@@ -73,6 +78,9 @@
 .team__name h3 {
   font-weight: bold;
   vertical-align: middle;
+  @include phones{
+    font-size: 1rem;
+  }
 
   &::after {
     content: "";
@@ -83,12 +91,24 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 7px solid $color-green;
-
+    transition: 0.3s;
   }
 }
 
-.team__desc--active {
-  display: block;
+.team__name--active {
+  
+  
+  & h3:after{
+    transform: rotate(180deg);
+    
+  }
+}
+.team__name--active + .team__desc{
+  transition: 0.4s;
+  opacity: 1;
+  height: 10%;
+  
+  
 }
 
 .team__job {
@@ -96,5 +116,14 @@
 
   @include tablets {
     font-size: rem(18px);
+  }
+
+  @include phones{
+    font-size: 0.9rem;
+  }
+}
+.team__text{
+  @include phones{
+    font-size: 0.8rem;
   }
 }

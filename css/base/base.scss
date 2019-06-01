@@ -97,6 +97,10 @@ address {
    height: auto;
    padding: 5% 0;
   }
+  @include tablets{
+    height: auto;
+    padding: 5% 0;
+   }
 }
 
 footer {
@@ -117,6 +121,9 @@ $color-green: #0f5a47;
   padding: rem(16px) rem(35px);
   box-shadow: 0 0 15px rgba(15, 72, 84, 0.5);
   cursor: pointer;
+  &:active{
+    opacity: 0.7;
+  }
 }
 // для визуализации
 
