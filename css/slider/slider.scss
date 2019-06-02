@@ -1,10 +1,18 @@
 .slider__screen {
   display: flex;
   height: 100%;
+  width: rem(1100px);
+  overflow: hidden;
 
   @include tablets {
     flex-wrap: wrap;
+    width: rem(768px);
   }
+  @include phones {
+    
+    width: rem(320px);
+  }
+
 }
 
 .slider__info {
@@ -134,11 +142,4 @@
   @include tablets {
     text-align: center;
   }
-}
-
-.second-slide {
-  display: none;
-}
-.first-slide {
- 
 }

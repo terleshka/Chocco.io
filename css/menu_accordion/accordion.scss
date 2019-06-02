@@ -9,12 +9,15 @@
  
 }
 .accordion__item{
+  transition:  0.3s ease-in-out;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   
 }
 .accordion__link{
+  transition:  0.3s ease-in-out;
+  cursor: pointer;
   width: rem(100px);
   display: flex;
   align-items: flex-end;
@@ -25,6 +28,7 @@
     }
 }
 .accordion__title{
+  transition:  0.3s ease-in-out;
   font-size: rem(47px);
   font-weight: 500;
   text-align: center;
@@ -58,29 +62,27 @@
   background-size: cover;
 }
 .accordion__desc{
+  transition: 0.3s ease-in-out;
   width: 0;
   overflow: hidden;
   background-color:#000;
   opacity: 0.7;
   height: 100%;
-  
-  
+
 }
 
 .accordion__text{
+  overflow: hidden;
   font-size: rem(16px);
   font-weight: 400;
   color:white;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
 }
 .accordion__item--active .accordion__desc{
   width: 33rem;
+  transition:  0.3s ease-in-out;
 
   @include phones{
   width: 20rem;
@@ -89,4 +91,8 @@
     left: 0;
     transform: translateX(0);
     }
+}
+.accordion__item--active{
+  transition:  0.3s ease-in-out;
+
 }
