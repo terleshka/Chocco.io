@@ -126,23 +126,87 @@ function autoClick() {
     case 3:
       feedbackSliderThree.classList.add('feedback__slider--active');
       avatarThree.classList.add('avatar__img_active');
-      numClick=1;
+      numClick = 1;
       break;
   }
 }
 
 
 avatarOne.addEventListener('click', function (e) {
-  numClick=1;
+  numClick = 1;
   autoClick();
 });
 
 avatarTwo.addEventListener('click', function (e) {
-  numClick=2;
+  numClick = 2;
   autoClick();
 });
 
 avatarThree.addEventListener('click', function (e) {
-  numClick=3;
+  numClick = 3;
   autoClick();
 });
+
+// Отправка формы
+
+const form = document.querySelector('.form');
+const send = document.querySelector('.form__submit');
+const modal = document.querySelector('.modal');
+const modalText = document.querySelector('.modal__title');
+const modalExit = document.querySelector('.modal__btn');
+
+
+send.addEventListener('click', function (e) {
+  e.preventDefault();
+  let formData = new FormData();
+
+  if (validateForm(form)) {
+
+    formData.append("name", form.elements.name.value);
+    formData.append("phone", form.elements.phone.value);
+    formData.append("comment", form.elements.comment.value);
+    formData.append("to", "vika-terleckaya@mail.ru");
+
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/');
+    xhr.setRequestHeader("X-Requested-Width", "XMLHttpRequest");
+    xhr.send(formData);
+    xhr.addEventListener('load', () => {
+      if (xhr.response.status) {
+        console.log(xhr.response);
+        modal.style.display = "flex";
+        modalText.textContent = "Сообщение отправлено";
+      } else {
+        modal.style.display = "flex";
+        modalText.textContent = "Ошибка отправки";
+
+      }
+    });
+  }
+});
+modalExit.addEventListener('click', function(e){
+  e.preventDefault();
+  modal.style.display = 'none';
+});
+
+function validateForm(form) {
+  let valid = true;
+
+  if (!validateField(form.elements.name)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.phone)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.comment)) {
+    valid = false;
+  }
+  return valid;
+}
+
+function validateField(field) {
+  field.nextElementSibling.textContent = field.validationMessage;
+  return field.checkValidity();
+
+}

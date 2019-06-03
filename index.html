@@ -519,14 +519,16 @@
                             <div class="form__label-input">
                                 <label class="form__label">
                                     <div class="form__label-title">Имя</div>
-                                    <input type="text" class="form__input width-m" name="name">
+                                    <input type="text" class="form__input width-m" name="name" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__label-input">
                                 <label class="form__label">
                                     <div class="form__label-title">Телефон</div>
-                                    <input type="text" class="form__input width-m" name="phone"
-                                        placeholder="89022348955">
+                                    <input type="tel" class="form__input width-m" name="phone"
+                                        placeholder="" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                         </div>
@@ -535,6 +537,7 @@
                                 <label class="form__label">
                                     <div class="form__label-title">Улица</div>
                                     <input type="text" class="form__input width-l" name="street">
+                                    
                                 </label>
                             </div>
                         </div>
@@ -571,8 +574,9 @@
                             <div class="form__label-input">
                                 <label class="form__label">
                                     <div class="form__label-title">Комментарий</div>
-                                    <textarea type="text" class="form__textarea" name="comment" cols="30"
+                                    <textarea type="text" class="form__textarea" name="comment" required cols="30"
                                         rows="5"></textarea>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                         </div>
@@ -609,6 +613,10 @@
                         </div>
                     </div>
                 </form>
+                <div class="modal">
+                    <h4 class="modal__title"></h4>
+                    <a href="" class="btn modal__btn">Закрыть</a>
+                </div>
             </div>
         </section>
         <section class="section contacts">
