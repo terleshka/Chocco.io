@@ -14,6 +14,9 @@
 }
 
 .feedback--container{
+  @include tablets{
+    min-height: 100vh;
+  }
   @include phones{
     width: 100%;
   }
@@ -57,8 +60,15 @@
   }
 }
 
-
-.feedback__active {
+.feedback__body{
+  height: 80%;
+  position: relative;
+}
+.feedback__slider {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: 0.3s ease;
   margin-top: rem(30px);
   display: flex;
   height: rem(350px);
@@ -72,13 +82,29 @@
     align-items: center;
     height: rem(600px);
     width:75%;
-    margin: 0 auto;
     margin-top: 10%;
+    left: 13%;
   }
   @include phones{
     width: 100%;
     height: rem(700px);
     
+  }
+}
+.feedback__slider--active{
+  display: flex;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.feedback__avatars{
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  @include tablets{
+    left: 26%;
+  }
+  @include phones{
+    left: 10%;
   }
 }
 
