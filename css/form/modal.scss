@@ -1,18 +1,31 @@
 .modal{
+  display: none;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 4;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.modal__window{
   height: rem(175px);
   width: rem(300px);
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 40%;
   background-color: #fff;
-  border: 1px solid gray;
   color: #000;
   font-size: rem(18px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  display: none;
+  transition: 0.5s;
+  opacity: 0;
 
   @include tablets{
     left: 32%;
@@ -28,4 +41,5 @@
 }
 .error{
   color: red;
+  font-size: rem(14px);
 }

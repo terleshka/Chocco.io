@@ -16,6 +16,7 @@
   background-color: #fff;
   margin-bottom: rem(15px);
   position: relative;
+  box-shadow: 0 0 5px rgba(15, 72, 84, 0.5);
 
 
   &:first-child::before {
@@ -28,6 +29,7 @@
     position: absolute;
     top: rem(-4px);
     left: rem(-4px);
+    box-shadow: 0 0 5px rgba(15, 72, 84, 0.5);
 
   }
 }

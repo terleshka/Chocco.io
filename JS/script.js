@@ -154,6 +154,7 @@ const send = document.querySelector('.form__submit');
 const modal = document.querySelector('.modal');
 const modalText = document.querySelector('.modal__title');
 const modalExit = document.querySelector('.modal__btn');
+const modalWindow = document.querySelector('.modal__window');
 
 
 send.addEventListener('click', function (e) {
@@ -175,10 +176,14 @@ send.addEventListener('click', function (e) {
     xhr.addEventListener('load', () => {
       if (xhr.response.status) {
         console.log(xhr.response);
-        modal.style.display = "flex";
+        modal.style.display = "block";
+        modalWindow.style.opacity = "1";
+        document.body.style.overflow = "hidden";
         modalText.textContent = "Сообщение отправлено";
       } else {
-        modal.style.display = "flex";
+        modal.style.display = "block";
+        modalWindow.style.opacity = "1";
+        document.body.style.overflow = "hidden";
         modalText.textContent = "Ошибка отправки";
 
       }
@@ -188,7 +193,14 @@ send.addEventListener('click', function (e) {
 modalExit.addEventListener('click', function(e){
   e.preventDefault();
   modal.style.display = 'none';
+  
 });
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+   
+  }
+}
 
 function validateForm(form) {
   let valid = true;
