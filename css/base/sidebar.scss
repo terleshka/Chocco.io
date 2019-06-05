@@ -2,7 +2,7 @@
   position: fixed;
   right: rem(51px);
   top: rem(217px);
-  z-index: 100;
+  z-index: 5;
   
   @include tablets{
     display: none;

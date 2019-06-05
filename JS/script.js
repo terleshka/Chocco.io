@@ -193,11 +193,13 @@ send.addEventListener('click', function (e) {
 modalExit.addEventListener('click', function(e){
   e.preventDefault();
   modal.style.display = 'none';
+  document.body.style.overflow = "auto";
   
 });
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
    
   }
 }
