@@ -19,6 +19,7 @@
   }
   @include phones{
     width: 100%;
+    justify-content: flex-start;
   }
 }
 .feedback-picture__position__absolute {
@@ -88,6 +89,7 @@
   @include phones{
     width: 100%;
     height: rem(700px);
+    left: 0;
     
   }
 }
@@ -99,12 +101,12 @@
 .feedback__avatars{
   position: absolute;
   bottom: 5%;
-  left: 30%;
+  left: 35%;
   @include tablets{
-    left: 26%;
+    left: 28%;
   }
   @include phones{
-    left: 10%;
+    left: 20%;
   }
 }
 

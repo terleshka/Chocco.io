@@ -1,0 +1,26 @@
+{
+  "name": "pr3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terleshka/Chocco.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terleshka/Chocco.io/issues"
+  },
+  "homepage": "https://github.com/terleshka/Chocco.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "touch": "^3.1.0"
+  }
+}

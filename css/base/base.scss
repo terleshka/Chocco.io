@@ -24,7 +24,13 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
-  min-height: 100%;
+  // min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+.maincontent{
+  height: 100%;
+  transition: transform 1s;
 }
 
 img {
@@ -92,6 +98,7 @@ address {
   display: flex;
   flex-direction: column;
   z-index: 3;
+  transition: 1s;
 
   @include phones{
    height: auto;
@@ -126,13 +133,5 @@ $color-green: #0f5a47;
     opacity: 0.7;
   }
 }
-// для визуализации
 
-.how-we-work{
-  background-color: #f8faf9;
-  text-align: center;
-  & h2{
-    margin-top: 50%;
-  }
-}
 

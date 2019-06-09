@@ -1,0 +1,49 @@
+.player{
+  background-color: #f8faf9;
+  text-align: center;
+}
+.container--player{
+  justify-content: flex-start;
+}
+.player-picture__position__absolute{
+position: absolute;
+width: 100%;
+height: 100%;
+
+  &-leaf1{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    
+    
+    @include phones{
+      width: 20%;
+     }
+    }
+    &-leaf2{
+    position: absolute;
+    top: 10%;
+    
+    right: 5%;
+  
+    
+    @include phones{
+     width: 20%;
+     bottom: rem(-170px);
+     left: -5%;
+    }
+  }
+  }
+
+.player__title{
+  margin-top: 3rem;
+  font-size: rem(48px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.video_player{
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}

@@ -5,9 +5,11 @@ const menuModal = document.getElementById('menuModal');
 const menuClose = document.getElementById('menuClose');
 menuOpen.onclick = function () {
   menuModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 };
 menuClose.onclick = function () {
   menuModal.style.display = "none";
+  document.body.style.overflow = "auto";
 };
 
 //аккордеон для секции команда
@@ -46,103 +48,101 @@ accordion.addEventListener('click', function (e) {
 
 //слайдер с батончиками
 
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-const slider = document.querySelector('.slider');
-const computedSlider = getComputedStyle(slider);
-const computedItems = getComputedStyle(items);
+const left = $('#left');
+const right = $('#right');
+const items = $('#items');
+const slider = $('.slider');
 var slideInterval = setInterval(rightClickTimer, 8000);
 
 const firstStep = 0;
-const step = parseInt(computedSlider.width);
-const lastStep = parseInt(computedItems.width);
+const step = slider.width();
+const lastStep = items.width();
 let currentStep = 0;
-items.style.right = currentStep;
+items.css('right', currentStep);
 
 
 function rightClickTimer() {
   if (currentStep < lastStep - step) {
     currentStep += step;
-    items.style.right = currentStep + "px";
+    items.css('right', currentStep + "px");
     return;
   }
   if (currentStep == lastStep - step) {
     currentStep = 0;
-    items.style.right = currentStep + "px";
+    items.css('right', currentStep + "px");
   }
 }
 
-right.addEventListener("click", function (e) {
+right.on("click", function (e) {
   e.preventDefault();
   rightClickTimer();
 });
 
-left.addEventListener("click", function (e) {
+left.on("click", function (e) {
   e.preventDefault();
   if (currentStep > firstStep) {
     currentStep -= step;
-    items.style.right = currentStep + "px";
+    items.css('right', currentStep + "px");
     return;
   }
   if (currentStep == firstStep) {
     currentStep = lastStep - step;
-    items.style.right = currentStep + "px";
+    items.css('right', currentStep + "px");
   }
 });
 
 //слайдер с отзывами
 
-const feedbackSliderOne = document.querySelector('.slider_one');
-const feedbackSliderTwo = document.querySelector('.slider_two');
-const feedbackSliderThree = document.querySelector('.slider_three');
+const feedbackSliderOne = $('.slider_one');
+const feedbackSliderTwo = $('.slider_two');
+const feedbackSliderThree = $('.slider_three');
 
-const avatarOne = document.querySelector('.avatar_one');
-const avatarTwo = document.querySelector('.avatar_two');
-const avatarThree = document.querySelector('.avatar_three');
+const avatarOne = $('.avatar_one');
+const avatarTwo = $('.avatar_two');
+const avatarThree = $('.avatar_three');
 let numClick = 1;
 var slideInterval_1 = setInterval(autoClick, 6000);
 
 autoClick();
 
 function deleteClassActive() {
-  for (let i = 0; i < document.querySelectorAll('.avatar__img').length; i++) {
-    document.querySelectorAll('.avatar__img')[i].classList.remove('avatar__img_active');
-    document.querySelectorAll('.feedback__slider')[i].classList.remove('feedback__slider--active');
-  }
+
+  $('.avatar__img').removeClass('avatar__img_active');
+  $('.feedback__slider').removeClass('feedback__slider--active');
+
 }
 
 function autoClick() {
   deleteClassActive();
   switch (numClick) {
-    case 1: feedbackSliderOne.classList.add('feedback__slider--active');
-      avatarOne.classList.add('avatar__img_active');
+    case 1: feedbackSliderOne.addClass('feedback__slider--active');
+      avatarOne.addClass('avatar__img_active');
       numClick++;
       break;
-    case 2: feedbackSliderTwo.classList.add('feedback__slider--active');
-      avatarTwo.classList.add('avatar__img_active');
+    case 2: feedbackSliderTwo.addClass('feedback__slider--active');
+      avatarTwo.addClass('avatar__img_active');
       numClick++;
       break;
     case 3:
-      feedbackSliderThree.classList.add('feedback__slider--active');
-      avatarThree.classList.add('avatar__img_active');
+      feedbackSliderThree.addClass('feedback__slider--active');
+      avatarThree.addClass('avatar__img_active');
       numClick = 1;
       break;
   }
 }
 
 
-avatarOne.addEventListener('click', function (e) {
+avatarOne.on('click', function (e) {
   numClick = 1;
   autoClick();
 });
 
-avatarTwo.addEventListener('click', function (e) {
+avatarTwo.on('click', function (e) {
   numClick = 2;
   autoClick();
 });
 
-avatarThree.addEventListener('click', function (e) {
+avatarThree.on('click', function (e) {
   numClick = 3;
   autoClick();
 });
@@ -190,17 +190,17 @@ send.addEventListener('click', function (e) {
     });
   }
 });
-modalExit.addEventListener('click', function(e){
+modalExit.addEventListener('click', function (e) {
   e.preventDefault();
   modal.style.display = 'none';
-  document.body.style.overflow = "auto";
-  
+  document.body.style.overflow = "auto ";
+
 });
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
-   
+
   }
 }
 
@@ -224,3 +224,151 @@ function validateField(field) {
   return field.checkValidity();
 
 }
+
+
+//подключение яндекс-карт
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+    center: [59.941861, 30.321988],
+    zoom: 13
+
+  });
+  myMap.behaviors.disable('scrollZoom')
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+    myPlacemark = new ymaps.Placemark([59.943477, 30.324360], {
+      hintContent: 'CHOCCO',
+      balloonContent: 'график: пн-пт, выходные: сб,вс <br> часы работы: с 10-00 до 18-00',
+    }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: './images/map/marker.png',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-24, -24],
+        iconContentLayout: MyIconContentLayout
+      })
+  myPlacemark2 = new ymaps.Placemark([59.932323, 30.303289], {
+    hintContent: 'CHOCCO',
+    balloonContent: 'график: пн-пт, выходные: сб,вс <br> часы работы: с 10-00 до 18-00',
+  }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: './images/map/marker.png',
+      iconImageSize: [46, 57],
+      iconImageOffset: [-24, -24],
+      iconContentLayout: MyIconContentLayout
+    })
+  myMap.geoObjects
+    .add(myPlacemark)
+    .add(myPlacemark2)
+})
+
+// скролл для секций
+
+const sections = $('.section');
+const display = $('.maincontent');
+let inscroll = false;
+
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
+const switchActiveClassSideMenu = navLinkIndex => {
+  $('.nav__link')
+    .eq(navLinkIndex)
+    .addClass('nav__link--active')
+    .siblings()
+    .removeClass('nav__link--active');
+
+}
+
+const performTransition = sectionEq => {
+  if (inscroll)
+    return;
+
+  const transitionDuration = 0;
+  const endOfInertion = 300;
+
+  inscroll = true;
+
+  const position = `${sectionEq * -100}%`;
+
+  sections
+    .eq(sectionEq)
+    .addClass('active')
+    .siblings()
+    .removeClass('active');
+
+  display.css({
+    transform: `translateY(${position})`
+  });
+
+  setTimeout(() => {
+    switchActiveClassSideMenu(sections)
+    inscroll = false;
+
+  }, transitionDuration + endOfInertion);
+
+
+
+};
+
+const scrollToSection = direction => {
+  const activeSection = sections.filter('.active');
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
+
+  if (direction == 'next' && nextSection.length) {
+    performTransition(nextSection.index());
+  }
+  if (direction == 'prev' && prevSection.length) {
+    performTransition(prevSection.index());
+  }
+}
+
+$('.wrapper').on('wheel', e => {
+  const deltaY = e.originalEvent.deltaY;
+
+  if (deltaY > 0) {
+    scrollToSection('next');
+  }
+
+
+  if (deltaY < 0) {
+    scrollToSection('prev');
+  }
+
+});
+
+$('.wrapper').on('touchmove', e => {
+  e.preventDefoult();
+})
+
+$(document).on('keydown', e => {
+  switch (e.keyCode) {
+    case 40:
+      scrollToSection('next');
+      break;
+    case 38:
+      scrollToSection('prev');
+      break;
+  }
+});
+
+$('[data-scroll-to]').on('click', e => {
+  e.preventDefault();
+
+  const target = $(e.currentTarget).attr('data-scroll-to');
+  performTransition(target);
+  console.log(target);
+});
+
+if (isMobile) {
+  $(window).swipe({
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+      const nextOrPrev = direction == 'up' ? 'next' : 'prev';
+
+      scrollToSection(nextOrPrev);
+    }
+  });
+}
+

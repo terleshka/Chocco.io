@@ -1,15 +1,4 @@
-.contacts{
-  position: relative;
-  background-image: url(../images/map/карта.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include tablets{
-    height: 60%;
-  }
-}
-.contacts__marker-pos-abs{
-  position: absolute;
-  top: 50%;
-  left: 70%;
+.contacts__map{
+  height: 100%;
+  overflow: hidden;
 }
