@@ -47,7 +47,7 @@
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../images/footer/phone.png);
+    background-image: url(./images/footer/phone.png);
 
     @include phones{
       background-size: cover;

@@ -21,7 +21,7 @@
   top: 50%;
   left: 2%;
   background-repeat: no-repeat;
-  background-image: url(../images/slider/arrow-scroll_left.png);
+  background-image: url(./images/slider/arrow-scroll_left.png);
 
   &:active {
     background-color: #fff;
@@ -46,7 +46,7 @@
   position: absolute;
   z-index: 2;
   background-repeat: no-repeat;
-  background-image: url(../images/slider/arrow-scroll_right.png);
+  background-image: url(./images/slider/arrow-scroll_right.png);
 
   &:active {
     background-color: #fff;
