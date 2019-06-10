@@ -23,6 +23,38 @@ for (var i = 0; i < acc.length; i++) {
 }
 
 //аккордеон для секции меню
+// const accordionList = document.querySelector('.accordion__list')
+
+// accordionList.addEventListener('click', function (e) {
+//   if (e.target.className === 'accordion__link') {
+//     e.target.parentElement.classList.toggle('accordion__item--active')
+//     const itemId = localStorage.getItem('itemId')
+//     localStorage.setItem('itemId', e.target.parentElement.id)
+
+//     if (itemId != e.target.parentElement.id) {
+//       document.getElementById(itemId).classList.remove('accordion__item--active')
+//       localStorage.removeitem('itemId')
+//       localStorage.setItem('itemId', e.target.parentElement.id)
+//     }
+
+//     if (window.innerWidth <= 480 && e.target.parentElement.classList.contains('accordion__item--active')) {
+//       console.log(e.target.parentElement.previousElementSibling);
+//       if (!e.target.parentElement.previousElementSibling) {
+//         console.log('object')
+//         accordionList.style.transform = 'translateX(50%)'
+//       } else if (!e.target.parentElement.nextElementSibling) {
+//         console.log('object')
+//         accordionList.style.transform = 'translateX(0)'
+//       } else {
+//         accordionList.style.transform = 'translateX(66px)'
+//       }
+//       e.target.nextElementSibling.style.width = `${window.innerWidth - 66}px`;
+//     } else {
+//       accordionList.style.transform = 'translateX(0)'
+//     }
+//   }
+
+// })
 const accordion = document.querySelector('.accordion');
 var currentActiveItem;
 

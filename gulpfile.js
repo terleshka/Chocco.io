@@ -12,6 +12,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
+const imagemin = require('gulp-imagemin');
 const env = process.env.NODE_ENV;
 
 
@@ -24,7 +25,7 @@ task('clean', () => {
 
 task('copy:html', () => {
   return src('./*.html')
-    .pipe(dest('./dist'))
+    .pipe(dest('dist'))
     .pipe(reload({ stream: true }))
 });
 
@@ -47,24 +48,39 @@ task('styles', () => {
     })
     )
     )
-    
+
     .pipe(gulpIf(env === 'prod', cleanCss()))
     .pipe(gulpIf(env === 'dev', sourcemaps.write()))
     .pipe(dest('dist'))
     .pipe(reload({ stream: true }));
 });
 
+task('images', () => {
+  return src('images/**/*.*')
+    .pipe(imagemin({
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 5,
+      svgoPlugins: [
+        {
+          removeViewBox: true
+        }
+      ]
+    }))
+    .pipe(dest('dist/images'))
+    .pipe(reload({ stream: true }));
+});
 
 
 
 
 task('scripts', () => {
   return src('./script.js')
-  .pipe(gulpIf(env === 'dev', sourcemaps.init()))
+    .pipe(gulpIf(env === 'dev', sourcemaps.init()))
     .pipe(concat('script.js', { newLine: ";" }))
     .pipe(
       babel({
-        presets:['@babel/env']
+        presets: ['@babel/env']
       })
     )
     .pipe(gulpIf(env === 'prod', uglify()))
@@ -84,22 +100,24 @@ task('server', () => {
 
 task('watch', () => {
   watch('./*.html', series('copy:html')),
-  watch('./css/**/*.scss', series('styles')),
-  watch('./js/*.js', series('scripts'))});
- 
+    watch('./css/**/*.scss', series('styles')),
+    watch('./js/*.js', series('scripts')),
+    watch('./images/**/*.*', series('images'))
+});
+
 
 
 task('default',
- series(
-   'clean', 
-   parallel('copy:html', 'styles', 'scripts'),
-   parallel('watch','server'))
+  series(
+    'clean',
+    parallel('copy:html', 'styles', 'scripts', 'images'),
+    parallel('watch', 'server'))
 );
 task('build',
- series(
-   'clean', 
-   parallel('copy:html', 'styles', 'scripts'),
-   
-)
+  series(
+    'clean',
+    parallel('copy:html', 'styles', 'scripts', 'images'),
+
+  )
 );
 
