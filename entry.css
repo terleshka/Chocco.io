@@ -470,7 +470,7 @@ footer {
   position: relative;
   background-color: #61c4d9;
   color: #fff;
-  background-image: url(../images/main/fern.png);
+  background-image: url(./images/main/fern.png);
   background-repeat: no-repeat;
   background-position: 100% 100%; }
   @media screen and (max-width: 768px) {
@@ -530,7 +530,7 @@ footer {
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../images/header/phone.png); }
+    background-image: url(./images/header/phone.png); }
   @media screen and (max-width: 768px) {
     .phone-number {
       display: none; } }
@@ -790,7 +790,7 @@ footer {
 .whychocco {
   position: relative;
   color: #000;
-  background-image: url(../images/why_chocco/leaf.png);
+  background-image: url(./images/why_chocco/leaf.png);
   background-repeat: no-repeat;
   background-position: 0% 56%; }
   @media screen and (max-width: 480px) {
@@ -893,7 +893,7 @@ footer {
     content: "";
     height: 100%;
     width: 100%;
-    background-image: url(../images/why_chocco/circles.png);
+    background-image: url(./images/why_chocco/circles.png);
     background-repeat: no-repeat;
     margin-top: 3.5rem;
     margin-left: -1.5625rem; }
@@ -965,7 +965,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-image: url(../images/feedback/berry.png);
+  background-image: url(./images/feedback/berry.png);
   background-repeat: no-repeat;
   background-position: 100% 5%; }
   @media screen and (max-width: 480px) {
@@ -1139,17 +1139,17 @@ footer {
   margin-top: 2.5rem; }
 
 .avatar_one {
-  background-image: url(../images/feedback/alena_small.jpg);
+  background-image: url(./images/feedback/alena_small.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
 .avatar_two {
-  background-image: url(../images/feedback/maria_small.jpg);
+  background-image: url(./images/feedback/maria_small.jpg);
   background-repeat: no-repeat;
   background-position: 50% 15%; }
 
 .avatar_three {
-  background-image: url(../images/feedback/vadim_small.jpg);
+  background-image: url(./images/feedback/vadim_small.jpg);
   background-repeat: no-repeat;
   background-position: 45% 35%;
   margin-right: 0; }
@@ -1182,7 +1182,7 @@ footer {
   top: 50%;
   left: 2%;
   background-repeat: no-repeat;
-  background-image: url(../images/slider/arrow-scroll_left.png); }
+  background-image: url(./images/slider/arrow-scroll_left.png); }
   .slider__arrow-previos:active {
     background-color: #fff;
     opacity: 0.6; }
@@ -1202,7 +1202,7 @@ footer {
   position: absolute;
   z-index: 2;
   background-repeat: no-repeat;
-  background-image: url(../images/slider/arrow-scroll_right.png); }
+  background-image: url(./images/slider/arrow-scroll_right.png); }
   .slider__arrow-next:active {
     background-color: #fff;
     opacity: 0.6; }
@@ -1549,7 +1549,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../images/menu/батончики.jpg);
+  background-image: url(./images/menu/батончики.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1630,19 +1630,19 @@ footer {
 
 .accordion-bg-milk {
   height: 100%;
-  background-image: url(../images/menu/milk.jpg);
+  background-image: url(./images/menu/milk.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .accordion-bg-honey {
   height: 100%;
-  background-image: url(../images/menu/honey.jpg);
+  background-image: url(./images/menu/honey.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .accordion-bg-berries {
   height: 100%;
-  background-image: url(../images/menu/berries.jpg);
+  background-image: url(./images/menu/berries.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1735,7 +1735,7 @@ footer {
 
 .delivery-form {
   position: relative;
-  background-image: url(../images/form/паттерн.png);
+  background-image: url(./images/form/паттерн.png);
   background-size: cover;
   color: #0f5a47;
   display: -webkit-box;
@@ -1977,7 +1977,7 @@ footer {
 
 .form__checkbox-custom:after {
   content: "";
-  background-image: url(../images/form/Галочка.png);
+  background-image: url(./images/form/Галочка.png);
   background-repeat: no-repeat;
   display: block;
   position: absolute;
@@ -2117,7 +2117,7 @@ footer {
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../images/footer/phone.png); }
+    background-image: url(./images/footer/phone.png); }
     @media screen and (max-width: 480px) {
       .phone-number--footer:before {
         background-size: cover; } }
@@ -2159,23 +2159,23 @@ footer {
 .socials__icon--vk {
   width: 1.4375rem;
   height: 0.8125rem;
-  background-image: url(../images/footer/vk_hover.png);
+  background-image: url(./images/footer/vk_hover.png);
   background-repeat: no-repeat; }
 
 .socials__icon--fb {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../images/footer/fb_hover.png);
+  background-image: url(./images/footer/fb_hover.png);
   background-repeat: no-repeat; }
 
 .socials__icon--inst {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../images/footer/inst_hover.png);
+  background-image: url(./images/footer/inst_hover.png);
   background-repeat: no-repeat; }
 
 .socials__icon--twit {
   width: 1.25rem;
   height: 1rem;
-  background-image: url(../images/footer/twitter_hover.png);
+  background-image: url(./images/footer/twitter_hover.png);
   background-repeat: no-repeat; }
