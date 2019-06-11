@@ -101,9 +101,8 @@ address {
   transition: 1s;
 
   @include phones{
-   height: auto;
    min-height: 100vh;
-   padding: 5% 0;
+
   }
   // @include tablets{
   //   height: auto;

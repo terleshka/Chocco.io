@@ -51,19 +51,27 @@
   
 }
 
-.features__icon {
+.features__icon-block {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  // margin-bottom: rem(25px);
+}
+.features__icon{
+  width: 37%;
   background-color: #f2f5f4;
+  padding: 1.5rem 0;
+  height: 6.4rem;
   border-radius: 50%;
-  width: rem(128px);
-  height: rem(128px);
-  margin: 0 auto;
-  margin-bottom: rem(25px);
+
+  @include phones{
+    width: 29%;
+  }
 }
 @mixin icon_svg {
-  width: rem(70px);
-  height: rem(70px);
-  margin-top: 23%;
-  margin-left: 23%;
+  // margin-top: 23%;
+  // margin-left: 23%;
 }
 
 .features__icon--man {
@@ -73,7 +81,8 @@
 
 .features__icon--smile {
   @include icon_svg();
-  fill:none;stroke:#000000;
+  fill:none;
+  stroke:#000000;
   stroke-width:0.75;
   stroke-miterlimit:10;
 }

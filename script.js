@@ -23,38 +23,7 @@ for (var i = 0; i < acc.length; i++) {
 }
 
 //аккордеон для секции меню
-// const accordionList = document.querySelector('.accordion__list')
 
-// accordionList.addEventListener('click', function (e) {
-//   if (e.target.className === 'accordion__link') {
-//     e.target.parentElement.classList.toggle('accordion__item--active')
-//     const itemId = localStorage.getItem('itemId')
-//     localStorage.setItem('itemId', e.target.parentElement.id)
-
-//     if (itemId != e.target.parentElement.id) {
-//       document.getElementById(itemId).classList.remove('accordion__item--active')
-//       localStorage.removeitem('itemId')
-//       localStorage.setItem('itemId', e.target.parentElement.id)
-//     }
-
-//     if (window.innerWidth <= 480 && e.target.parentElement.classList.contains('accordion__item--active')) {
-//       console.log(e.target.parentElement.previousElementSibling);
-//       if (!e.target.parentElement.previousElementSibling) {
-//         console.log('object')
-//         accordionList.style.transform = 'translateX(50%)'
-//       } else if (!e.target.parentElement.nextElementSibling) {
-//         console.log('object')
-//         accordionList.style.transform = 'translateX(0)'
-//       } else {
-//         accordionList.style.transform = 'translateX(66px)'
-//       }
-//       e.target.nextElementSibling.style.width = `${window.innerWidth - 66}px`;
-//     } else {
-//       accordionList.style.transform = 'translateX(0)'
-//     }
-//   }
-
-// })
 const accordion = document.querySelector('.accordion');
 var currentActiveItem;
 
@@ -406,64 +375,6 @@ if (isMobile) {
 
 //player
 
-// //Инициализация плеера
-// function onYouTubeIframeAPIReady() {
-//   player = new YT.Player('player', {
-//     height: '400',
-//     playerVars: { 'autoplay': 0, 'controls': 0, 'showinfo': 0, 'rel': 0 },
-//     width: '600',
-//     videoId: 'Z8qU0GdW88Q',
-//     events: {
-//       'onReady': onPlayerReady
-//     }
-//   });
-// }
-
-// //Громкость
-// function editVolume() {
-//   if (player.getVolume() == 0) {
-//     player.setVolume('100');
-//   } else {
-//     player.setVolume('0');
-//   }
-// }
-// // Обновляем время на панельке - счетчик
-// function updateTimerDisplay(){
-// 	document.getElementById('time').innerHTML = formatTime(player.getCurrentTime());
-// }
-// /*Формат времени*/
-// function formatTime(time){
-// 	time = Math.round(time);
-// 	var minutes = Math.floor(time / 60),
-// 	seconds = time - minutes * 60;
-// 	seconds = seconds < 10 ? '0' + seconds : seconds;
-// 	return minutes + ":" + seconds;
-// }
-
-// // Обновляем прогресс
-// function updateProgressBar(){
-
-// 	var line_width = jQuery('#line').width();
-// 	var persent = (player.getCurrentTime() / player.getDuration());
-// 	jQuery('.viewed').css('width', persent * line_width);
-// 	per = persent * 100;
-// 	jQuery('#fader').css('left', per+'%');
-// }
-
-// /*Линия прогресса*/
-// function progress (event) {
-
-// 	var line_width = jQuery('#line').width();
-// 	// положение элемента
-// 	var pos = jQuery('#line').offset();
-// 	var elem_left = pos.left;		
-// 	// положение курсора внутри элемента
-// 	var Xinner = event.pageX - elem_left;
-// 	var newTime = player.getDuration() * (Xinner / line_width);
-// 	// Skip video to new time.
-// 	player.seekTo(newTime);
-// }
-
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
@@ -471,11 +382,13 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 let player;
-console.log(player)
+var playerWidth = '660';
+var playerHeight = '370';
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '370',
-    width: '660',
+    height: playerHeight,
+    width: playerWidth,
     videoId: 'OHoRhdPNqpQ',
     playerVars: {
       controls: 0,
@@ -491,6 +404,26 @@ function onYouTubeIframeAPIReady() {
     }
   });
 }
+
+var screenWidth = (screen.width);
+var panel = $('.panel');
+var playerImageWidth = $('.player__image');
+
+if ((screenWidth <= 768 ) && (screenWidth > 480)){
+  playerWidth = '600';
+  playerHeight = '330';
+  playerImageWidth.css('width', '600');
+  panel.css('width', '600');
+}else {
+  if (screenWidth <= 480){
+    playerWidth = '400';
+    playerHeight = '220';
+    playerImageWidth.css('width', '400');
+    panel.css('width','400')
+  }
+  
+}
+
 
 $('.play').on('click', e =>{
   

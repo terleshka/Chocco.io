@@ -17,7 +17,7 @@ height: 100%;
     
     
     @include phones{
-      width: 20%;
+      width: 10%;
      }
     }
     &-leaf2{
@@ -28,9 +28,9 @@ height: 100%;
   
     
     @include phones{
-     width: 20%;
+     width: 10%;
      bottom: rem(-170px);
-     left: -5%;
+     
     }
   }
   }

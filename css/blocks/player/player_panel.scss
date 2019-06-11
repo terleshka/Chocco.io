@@ -71,6 +71,9 @@
   width: rem(450px);
   background: #fff;
   margin-right: 15px;
+  @include phones{
+    width: rem(340px);
+  }
 }
 
 .player__volume {
@@ -95,6 +98,12 @@
   top: -4px;
   transform: translateX(-50%);
   left: 0;
+
+  @include phones{
+    width: 9px;
+    height: 9px;
+    top: -3px;
+  }
 }
 
 
@@ -102,8 +111,6 @@
 	opacity: 1;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
   background: url('./images/how_we_work/Granola-Bars-with-calamondin.jpg') center center no-repeat;
   cursor: pointer;
