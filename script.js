@@ -24,28 +24,36 @@ for (var i = 0; i < acc.length; i++) {
 
 //аккордеон для секции меню
 
-const accordion = document.querySelector('.accordion');
+
 var currentActiveItem;
+var screenWidth = (screen.width);//ширина окна браузера также используется в плеере
 
-accordion.classList.add('accordion');
-accordion.addEventListener('click', function (e) {
-  if (e.target.classList.contains('accordion__title') || e.target.classList.contains('accordion__link')) {
-    if (currentActiveItem) {
-      currentActiveItem.classList.remove('accordion__item--active');
-      if (currentActiveItem == e.target.parentNode.parentNode || currentActiveItem == e.target.parentNode) {
-        currentActiveItem = 0;
-        return;
-      }
-    }
 
-    if (e.target.classList.contains('accordion__title')) {
-      currentActiveItem = e.target.parentNode.parentNode;
-    } else {
-      currentActiveItem = e.target.parentNode;
+$('.accordion__item').on('click', function (e) {
+  if ($(this).hasClass('accordion__item--active')) {
+    $(this).removeClass('accordion__item--active');
+    if (screenWidth <= 480) {
+      $('.accordion__item').css('display', 'flex');
     }
-    currentActiveItem.classList.add('accordion__item--active');
+  } else {
+    $('.accordion__item').removeClass('accordion__item--active');
+    $(this).addClass('accordion__item--active');
+    if (screenWidth <= 480) {
+      $('.accordion__item').each(function (index) {
+        if ($(this).hasClass('accordion__item--active')) {
+          console.log('000');
+  
+        } else {
+          console.log('111')
+          $(this).css('display', 'none');
+
+        }
+      });
+    }
   }
 });
+
+
 
 //слайдер с батончиками
 
@@ -405,28 +413,28 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-var screenWidth = (screen.width);
+
 var panel = $('.panel');
 var playerImageWidth = $('.player__image');
 
-if ((screenWidth <= 768 ) && (screenWidth > 480)){
+if ((screenWidth <= 768) && (screenWidth > 480)) {
   playerWidth = '600';
   playerHeight = '330';
   playerImageWidth.css('width', '600');
   panel.css('width', '600');
-}else {
-  if (screenWidth <= 480){
+} else {
+  if (screenWidth <= 480) {
     playerWidth = '400';
     playerHeight = '220';
     playerImageWidth.css('width', '400');
-    panel.css('width','400')
+    panel.css('width', '400')
   }
-  
+
 }
 
 
-$('.play').on('click', e =>{
-  
+$('.play').on('click', e => {
+
   const btn = $(e.currentTarget);
 
   if (btn.hasClass('paused')) {
@@ -434,8 +442,8 @@ $('.play').on('click', e =>{
     btn.removeClass('paused');
   } else {
 
-  player.playVideo();
-  btn.addClass('paused');
+    player.playVideo();
+    btn.addClass('paused');
   }
 });
 
@@ -455,7 +463,7 @@ function onPlayerReady(event) {
 
   const duration = player.getDuration();
   let interval;
- 
+
   clearInterval(interval);
 
   interval = setInterval(() => {
@@ -470,7 +478,7 @@ function onPlayerReady(event) {
 
   }, 1000);
 }
-  
+
 
 $(".player__line").on("click", e => {
   console.log(e)
@@ -499,14 +507,14 @@ function onPlayerStateChange(event) {
       $(".player__wrapper").addClass("active");
       playerButton.addClass("paused");
       break;
-    case 2: 
+    case 2:
       playerButton.removeClass("paused");
       break;
   }
 }
 
 
-$('.player__volume').on('click', e =>{
+$('.player__volume').on('click', e => {
   const btn_vol = $(e.currentTarget);
 
   if (btn_vol.hasClass('volume__active')) {
@@ -514,8 +522,7 @@ $('.player__volume').on('click', e =>{
     btn_vol.removeClass('volume__active');
   } else {
 
-  player.mute();
-  btn_vol.addClass('volume__active');
+    player.mute();
+    btn_vol.addClass('volume__active');
   }
 });
-  

@@ -85,12 +85,8 @@
   transition:  0.3s ease-in-out;
 
   @include phones{
-  width: 20rem;
+  width: 100%;
   }
-  @include phones{
-    left: 0;
-    transform: translateX(0);
-    }
 }
 .accordion__item--active{
   transition:  0.3s ease-in-out;

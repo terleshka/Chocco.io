@@ -1669,13 +1669,7 @@ footer {
   transition: 0.3s ease-in-out; }
   @media screen and (max-width: 480px) {
     .accordion__item--active .accordion__desc {
-      width: 20rem; } }
-  @media screen and (max-width: 480px) {
-    .accordion__item--active .accordion__desc {
-      left: 0;
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0); } }
+      width: 100%; } }
 
 .accordion__item--active {
   -webkit-transition: 0.3s ease-in-out;
